@@ -24,6 +24,6 @@ public class Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(time);
+       // Debug.Log(time);
     }
 }
