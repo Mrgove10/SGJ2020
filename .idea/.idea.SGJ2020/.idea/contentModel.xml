@@ -85,6 +85,7 @@
           <e p="Manager.cs" t="Include" />
           <e p="Mouvement.cs" t="Include" />
           <e p="PlayerHover.cs" t="Include" />
+          <e p="TestGetPixelColor.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
         </e>
         <e p="Tests" t="Include">

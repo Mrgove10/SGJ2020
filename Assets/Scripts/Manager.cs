@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
@@ -10,20 +7,24 @@ public class Manager : MonoBehaviour
     public int time = 250;
     
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        InvokeRepeating("removeTime", 1.0f, 1.0f);
+        InvokeRepeating(nameof(RemoveTime), 1.0f, 1.0f);
     }
 
-    void removeTime()
+    private void RemoveTime()
     {
         if(time > 0) {
             time -= 1;
         }
+        else if(time <=0)
+        {
+            GameOver();
+        }
     }
-    // Update is called once per frame
-    void Update()
+    
+    public void GameOver()
     {
-       // Debug.Log(time);
+        Debug.Log("GAMEOVER");
     }
 }
