@@ -22,7 +22,7 @@ public class MainMenuScript : MonoBehaviour
     public Button boutonQuit;
     public Button boutonCreditResume;
 
-
+    public Animator robotAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +33,15 @@ public class MainMenuScript : MonoBehaviour
         boutonCreditResume.onClick.AddListener(ResumeCredits);
 
         creditsPanel.SetActive(false);
-    }
+       
+        InvokeRepeating(nameof(Animation), 1f, 2f);
 
+    }
+    void Animation() {
+        robotAnimator.SetInteger("Emote",1);
+        Debug.Log("Annimation Launched");
+    }
+    
     // Update is called once per frame
     void Update()
     {
