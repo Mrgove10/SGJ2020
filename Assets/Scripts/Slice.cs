@@ -33,11 +33,8 @@ public class Slice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            //stopSlide = true permet de stopper le slider
-            //stopSlide = true; 
-
             //Appelle la fonction qui permet de vérifier si l'utilisateur à cliqué au bon endroit
             VerifSlide();
         }
