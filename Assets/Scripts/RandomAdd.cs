@@ -1,7 +1,7 @@
 
-using System.Drawing.Drawing2D;
+//using System.Drawing.Drawing2D;
 using UnityEngine;
-using Maths
+//using Maths;
 
 public class RandomAdd : MonoBehaviour
 {
@@ -14,10 +14,10 @@ public class RandomAdd : MonoBehaviour
     {
         mesh = earth.GetComponent<MeshFilter>().mesh;
     
-         Matrix 4x4 localToWorld = transform.localToWorldMatrix;
+         //Matrix 4x4 localToWorld = transform.localToWorldMatrix;
          
-         for(int i = 0; i<mf.mesh.vertices.Length; ++i){
+         /*for(int i = 0; i<mf.mesh.vertices.Length; ++i){
                Vector3 world_v = localToWorld.MultiplyPoint3x4(mf.mesh.vertices[i]);
-         }
+         }*/
     }
 }
