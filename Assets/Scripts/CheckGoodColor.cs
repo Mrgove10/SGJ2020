@@ -11,6 +11,8 @@ public class CheckGoodColor : MonoBehaviour
     public int clickOffset;
     public GameObject showMineralUI;
 
+
+    public RandomizeImage rng;
     private bool _isWin = false;
     private GameObject _popUP;
     private List<Vector3> _posWin = new List<Vector3>(); 

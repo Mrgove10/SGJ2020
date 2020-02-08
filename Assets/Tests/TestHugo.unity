@@ -308,26 +308,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: PickColorObj
       objectReference: {fileID: 0}
+    - target: {fileID: 5516909725502765072, guid: 164f25164241c154b85bc0ebcc919376,
+        type: 3}
+      propertyPath: m_Name
+      value: Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516909725502765084, guid: 164f25164241c154b85bc0ebcc919376,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516909725502765084, guid: 164f25164241c154b85bc0ebcc919376,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5516909725502765086, guid: 164f25164241c154b85bc0ebcc919376,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5516909725502765086, guid: 164f25164241c154b85bc0ebcc919376,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -86.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5516909725502765086, guid: 164f25164241c154b85bc0ebcc919376,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 62.20322
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5516909725502765086, guid: 164f25164241c154b85bc0ebcc919376,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 66.44852
+      value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 5516909725502765086, guid: 164f25164241c154b85bc0ebcc919376,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516909725502765087, guid: 164f25164241c154b85bc0ebcc919376,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f31185e9a45c5e45a586a1c2d2793f8,
+        type: 3}
     - target: {fileID: 8213443701112673743, guid: 164f25164241c154b85bc0ebcc919376,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -343,8 +369,36 @@ PrefabInstance:
       propertyPath: tolerence
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 8912707087164114045, guid: 164f25164241c154b85bc0ebcc919376,
+        type: 3}
+      propertyPath: rng
+      value: 
+      objectReference: {fileID: 190332152}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 164f25164241c154b85bc0ebcc919376, type: 3}
+--- !u!1 &190332151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5516909725502765072, guid: 164f25164241c154b85bc0ebcc919376,
+    type: 3}
+  m_PrefabInstance: {fileID: 190332150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &190332152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190332151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57133fea24c2e284ea6724fa1969fd28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxX: 950
+  maxY: 1000
+  minX: -1000
+  minY: -1100
+  background: {fileID: 190332151}
 --- !u!1 &732115832
 GameObject:
   m_ObjectHideFlags: 0
