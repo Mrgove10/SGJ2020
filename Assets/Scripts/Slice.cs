@@ -17,6 +17,7 @@ public class Slice : MonoBehaviour
     private bool stopSlide; //Variable qui permet de stopper ou non le slider (true le stoppe)
 
     public GameObject ROckTop;
+    public Player player;
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +73,8 @@ public class Slice : MonoBehaviour
         //Si le slider est dans la bonne range
         if (mainSlider.value >= SliderBorneBas.value && mainSlider.value <= sliderBorneHaut.value && Manager.currentState != States.Roam)
         {
+            Destroy(player.objInteractWith);
+            player.objInteractWith = null;
             stopSlide = true;
             resulText.text = "Ok !";
             ROckTop.GetComponent<Rigidbody>().useGravity = true;
