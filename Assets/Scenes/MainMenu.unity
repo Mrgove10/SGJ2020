@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 430ba931e80857749be5aa6f70600467,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -247,7 +247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 865.76, y: -450.49}
+  m_AnchoredPosition: {x: 800.9, y: -485.3}
   m_SizeDelta: {x: 233.52, y: 50.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &57039872
@@ -368,10 +368,10 @@ RectTransform:
   m_Father: {fileID: 5997710674401712663}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0097961, y: -0.0017395}
-  m_SizeDelta: {x: 2060.1, y: 1006.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &512683347
 MonoBehaviour:
@@ -1166,7 +1166,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 865.7698, y: -450.4917}
+  m_AnchoredPosition: {x: 800.90985, y: -485.30167}
   m_SizeDelta: {x: 233.52, y: 50.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1543961186
