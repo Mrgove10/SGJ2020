@@ -13,6 +13,7 @@ public class CheckGoodColor : MonoBehaviour
 
     private bool _isWin = false;
     private GameObject _popUP;
+    private List<Vector3> _posWin = new List<Vector3>(); 
     private void Start()
     {
     }
@@ -38,12 +39,29 @@ public class CheckGoodColor : MonoBehaviour
             minGoodColor.r -= tolerence;
             minGoodColor.g -= tolerence;
             minGoodColor.b -= tolerence;
+            if(_posWin.Count > 0)
+            {
+
+                Debug.Log(_posWin[0]);
+                Debug.Log(positionClicked);
+                Debug.Log(_posWin[0].x + clickOffset <= positionClicked.x && positionClicked.x <= _posWin[0].x - clickOffset);
+                Debug.Log(_posWin[0].y + clickOffset < positionClicked.y && positionClicked.y < _posWin[0].y - clickOffset);
+                if ((positionClicked.x + clickOffset <= _posWin[0].x  && positionClicked.y + clickOffset <= _posWin[0].y )
+                    &&  (positionClicked.x - clickOffset >= _posWin[0].x  && positionClicked.y - clickOffset >= _posWin[0].x ))
+                {
+                    //do not count
+                    Debug.Log("Do not count");
+                    return;
+                }
+
+            }
             foreach (Color color in colorsClicked)
             {
                 if (maxGoodColor.r >= color.r && maxGoodColor.g >= color.g && maxGoodColor.b >= color.b &&
                 minGoodColor.r <= color.r && minGoodColor.g <= color.g && minGoodColor.b <= color.b 
                 && _isWin == false)
                 {
+                    _posWin.Add(positionClicked);
                     _isWin = true;
                     Debug.Log("GG");
                 }
@@ -54,6 +72,13 @@ public class CheckGoodColor : MonoBehaviour
             popUPText.transform.position = positionClicked;
             popUPText.text = Random.Range(0, 15).ToString();
             _popUP = popUPgameObject;
+            //age du minerais (range) -> 
+            //nb de minerais analyser (reussite)
+            //affichage incertitude
+            //
+            //diminue le score (rater)
+            //
+            Random.Range(23, 38);
             //Instantiate(showMineralUI, positionClicked, Quaternion.identity);
             _isWin = false;
 
