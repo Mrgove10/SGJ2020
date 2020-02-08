@@ -20,14 +20,12 @@ public class Interaction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("interaction");
             var t = rock.transform.GetChild(r.Next(0, rock.transform.childCount));
             if (t.transform.name.Contains("polySurface"))
             {
                 t.GetComponent<Rigidbody>().GetComponent<Rigidbody>().useGravity = true;
                 StartCoroutine(deletebj(t.gameObject));
             }
-         
         }
 
         if (manager.currentState == States.Break)
@@ -35,12 +33,9 @@ public class Interaction : MonoBehaviour
             TurnObject();
         }
 
-        if (rock.transform.childCount == 2)
+        if (rock.transform.childCount <= 2)
         {
-            if (rock.transform.name.Contains("PO1") && rock.transform.name.Contains("PO2"))
-            {
-                manager.currentState = States.Slice;
-            }
+            manager.currentState = States.Slice;
         }
     }
 

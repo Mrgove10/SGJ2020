@@ -12,6 +12,7 @@ public class SliderScript : MonoBehaviour
     public TMP_Text resulText; //Text pour le test permetant de savoir si l'utilisateur se trompe ou non
     public float pas; //Le pas (la vitesse à laquelle le slider bouge)
 
+    public Manager Manager;
     private bool signePas; //Le signe du pas (négatif ou positif)
     private bool stopSlide; //Variable qui permet de stopper ou non le slider (true le stoppe)
 
@@ -33,7 +34,7 @@ public class SliderScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             //stopSlide = true permet de stopper le slider
             //stopSlide = true; 
@@ -75,6 +76,7 @@ public class SliderScript : MonoBehaviour
         if(mainSlider.value >= SliderBorneBas.value && mainSlider.value <= sliderBorneHaut.value)
         {
             resulText.text = "Ok !";
+            Manager.currentState = States.Identify;
             //Déplace les bornes
             sliderBorneHaut.value = Random.Range(25, 80);
             SliderBorneBas.value = sliderBorneHaut.value - Random.Range(10, 25);
