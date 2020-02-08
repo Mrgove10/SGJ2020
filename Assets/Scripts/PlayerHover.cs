@@ -7,6 +7,6 @@ public class PlayerHover : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position += Vector3.up * (Mathf.Cos(Time.time) * clamp) / 100; //float effect
+        transform.position += Vector3.up * (Mathf.Cos(Time.time * 2) * clamp) / 100; //float effect
     }
 }

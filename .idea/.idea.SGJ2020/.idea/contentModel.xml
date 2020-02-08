@@ -103,6 +103,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Animation.cs" t="Include" />
           <e p="CheckGoodColor.cs" t="Include" />
           <e p="Examine.cs" t="Include" />
           <e p="Interaction.cs" t="Include" />
@@ -117,6 +118,7 @@
         </e>
         <e p="Tests" t="Include">
           <e p="jesaispascequejefais.cs" t="Include" />
+          <e p="RandomizeImage.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
