@@ -103,6 +103,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AdaptiveMusicScript.cs" t="Include" />
           <e p="Break.cs" t="Include" />
           <e p="CheckGoodColor.cs" t="Include" />
           <e p="Examine.cs" t="Include" />
@@ -110,17 +111,14 @@
           <e p="Manager.cs" t="Include" />
           <e p="MissionWaypoint.cs" t="Include" />
           <e p="Mouvement.cs" t="Include" />
+          <e p="MouvementMusicScript.cs" t="Include" />
+          <e p="MusicManager.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="RandomizeImage.cs" t="Include" />
           <e p="Slice.cs" t="Include" />
           <e p="States.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
           <e p="Waypoint.cs" t="Include" />
-        </e>
-        <e p="Tests" t="Include">
-          <e p="AdaptiveMusicScript.cs" t="Include" />
-          <e p="MouvementMusicScript.cs" t="Include" />
-          <e p="MusicManager.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
