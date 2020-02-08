@@ -46,6 +46,7 @@ public class Slice : MonoBehaviour
 
     void FixedUpdate()
     {
+        Debug.Log(manager.currentState);
         //Fait bouger le slider tant que stopSlide est sur false
         if (!stopSlide)
         {
@@ -71,7 +72,6 @@ public class Slice : MonoBehaviour
             signePas = true;
             pas = Mathf.Abs(pas);
         }
-
         mainSlider.value += pas;
     }
 
@@ -89,7 +89,7 @@ public class Slice : MonoBehaviour
         }
         else
         {
-            sliderBorneHaut.value = Random.Range(25, 80);
+            /*sliderBorneHaut.value = Random.Range(25, 80);
             SliderBorneBas.value = sliderBorneHaut.value - Random.Range(10, 25);
             if (pas <= 3.2f || pas >= -3.2f) //Augmente la vitesse jusqu'a un certain point
             {
@@ -101,7 +101,7 @@ public class Slice : MonoBehaviour
                 {
                     pas += 0.2f;
                 }
-            }
+            }*/
             
             resulText.text = "Pas bon !";
             //Inverse le sens du slider
