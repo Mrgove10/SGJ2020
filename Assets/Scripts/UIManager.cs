@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
 
     [Header("objects")]
     public GameObject MainUI;
+
     public TMP_Text timeText;
     public TMP_Text scoreText;
 

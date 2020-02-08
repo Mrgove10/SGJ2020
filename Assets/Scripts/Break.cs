@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using Random = System.Random;
 
-public class Interaction : MonoBehaviour
+public class Break : MonoBehaviour
 {
     public Manager manager;
     public GameObject rock;

@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     public float clamp = 0.0025f;
     public Manager manager;
     public Animator Animator;
-    
+
     void OnTriggerEnter(Collider col)
     {
         Debug.Log(col);

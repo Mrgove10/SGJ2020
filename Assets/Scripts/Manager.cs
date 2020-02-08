@@ -78,5 +78,4 @@ public class Manager : MonoBehaviour
         planet.SetActive(true);
         rock.SetActive(true);
     }
-
 }

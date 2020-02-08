@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class SliderScript : MonoBehaviour
+public class Slice : MonoBehaviour
 {
     public Slider mainSlider; //Le Slider dont la valeur change tout le temps
     public Slider sliderBorneHaut; //La borne haut
@@ -15,7 +15,6 @@ public class SliderScript : MonoBehaviour
     public Manager Manager;
     private bool signePas; //Le signe du pas (négatif ou positif)
     private bool stopSlide; //Variable qui permet de stopper ou non le slider (true le stoppe)
-
 
 
     // Start is called before the first frame update
@@ -73,17 +72,17 @@ public class SliderScript : MonoBehaviour
     void VerifSlide()
     {
         //Si le slider est dans la bonne range
-        if(mainSlider.value >= SliderBorneBas.value && mainSlider.value <= sliderBorneHaut.value)
+        if (mainSlider.value >= SliderBorneBas.value && mainSlider.value <= sliderBorneHaut.value)
         {
             resulText.text = "Ok !";
             Manager.currentState = States.Identify;
-            
+
             //Déplace les bornes
             sliderBorneHaut.value = Random.Range(25, 80);
             SliderBorneBas.value = sliderBorneHaut.value - Random.Range(10, 25);
             if (pas <= 3.2f || pas >= -3.2f) //Augmente la vitesse jusqu'a un certain point
             {
-                if(pas < 0)
+                if (pas < 0)
                 {
                     pas += -0.2f;
                 }
@@ -91,7 +90,7 @@ public class SliderScript : MonoBehaviour
                 {
                     pas += 0.2f;
                 }
-            } 
+            }
 
             //Mettre ici les fonctions qui s'active quand l'utilisateur clique sur une bonne range
         }

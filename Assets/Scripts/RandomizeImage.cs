@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class RandomizeImage : MonoBehaviour
 {
-
     public int maxX;
     public int maxY;
     public int minX;
@@ -16,7 +15,9 @@ public class RandomizeImage : MonoBehaviour
 
     public int randomX;
     public int randomY;
+
     private Vector3 _pos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,5 +26,4 @@ public class RandomizeImage : MonoBehaviour
         _pos = new Vector3(randomX, randomY, 269);
         background.transform.position = _pos;
     }
-
 }

@@ -8,11 +8,15 @@ public class MissionWaypoint : MonoBehaviour
 {
     // Indicator icon
     public Image img;
+
     public List<GameObject> imgs = new List<GameObject>();
+
     // The target (location, enemy, etc..)
     public Transform[] targets;
+
     // UI Text to display the distance
     public TMP_Text meter;
+
     // To adjust the position of the icon
     public Vector3 offset;
 
@@ -22,7 +26,7 @@ public class MissionWaypoint : MonoBehaviour
     {
         for (int i = 0; i < targets.Length; i++)
         {
-            imgs.Add(Instantiate(img.gameObject,canvas.transform));
+            imgs.Add(Instantiate(img.gameObject, canvas.transform));
             imgs[i].gameObject.SetActive(true);
         }
     }
@@ -30,8 +34,7 @@ public class MissionWaypoint : MonoBehaviour
 
     private void Update()
     {
-        
-        for (int i= 0; i < targets.Length; i++)
+        for (int i = 0; i < targets.Length; i++)
         {
             // Giving limits to the icon so it sticks on the screen
             // Below calculations witht the assumption that the icon anchor point is in the middle
@@ -70,16 +73,14 @@ public class MissionWaypoint : MonoBehaviour
             // Update the marker's position
             imgs[i].GetComponent<Image>().transform.position = pos;
             // Change the meter text to the distance with the meter unit 'm'
-            if(((int)Vector3.Distance(targets[i].position, transform.position)) < 20)
+            if (((int) Vector3.Distance(targets[i].position, transform.position)) < 20)
             {
                 imgs[i].GetComponentInChildren<TMP_Text>().text = "";
             }
             else
             {
-                imgs[i].GetComponentInChildren<TMP_Text>().text = ((int)Vector3.Distance(targets[i].position, transform.position)).ToString() + "m";
+                imgs[i].GetComponentInChildren<TMP_Text>().text = ((int) Vector3.Distance(targets[i].position, transform.position)).ToString() + "m";
             }
         }
-
-        
     }
 }

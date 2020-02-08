@@ -11,7 +11,7 @@ public class Examine : MonoBehaviour
     Vector3 originalRotation;
 
     //If True Allow Rotation Of Object
-   // [ReadOnly]
+    // [ReadOnly]
     public bool examineMode;
 
     public float distanceFromCamera = 2.5f;

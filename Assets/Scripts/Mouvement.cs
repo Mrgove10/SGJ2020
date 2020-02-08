@@ -5,6 +5,7 @@ public class Mouvement : MonoBehaviour
     public float speed = 6.0f;
 
     public Manager manager;
+
     // Update is called once per frame
     void Update()
     {

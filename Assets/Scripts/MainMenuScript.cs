@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 #if UNITY_EDITOR
 using UnityEditor;
 
@@ -23,6 +22,7 @@ public class MainMenuScript : MonoBehaviour
     public Button boutonCreditResume;
 
     public Animator robotAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,19 +33,19 @@ public class MainMenuScript : MonoBehaviour
         boutonCreditResume.onClick.AddListener(ResumeCredits);
 
         creditsPanel.SetActive(false);
-       
-        InvokeRepeating(nameof(Animation), 1f, 2f);
 
+        InvokeRepeating(nameof(Animation), 1f, 2f);
     }
-    void Animation() {
-        robotAnimator.SetInteger("Emote",1);
+
+    void Animation()
+    {
+        robotAnimator.SetInteger("Emote", 1);
         Debug.Log("Annimation Launched");
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     void StartGame()
@@ -67,11 +67,11 @@ public class MainMenuScript : MonoBehaviour
 
     void QuitGame()
     {
-        #if UNITY_EDITOR
-                EditorApplication.isPlaying = false;
-        #else
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
                     Application.Quit();
-        #endif
+#endif
     }
 
     void ResumeCredits()
