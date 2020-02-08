@@ -12,3 +12,4 @@ public class Animation : MonoBehaviour
             Animator.SetFloat("Blend Y", Input.GetAxis("Vertical"));
         }
     }
+    
