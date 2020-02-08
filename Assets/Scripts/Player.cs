@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
         Animator.SetFloat("Blend Y", Input.GetAxis("Vertical"));
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+    }
     private void FixedUpdate()
     {
         transform.position += Vector3.up * (Mathf.Cos(Time.time) * clamp) / 100; //float effect
