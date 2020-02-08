@@ -14,6 +14,12 @@ public class Player : MonoBehaviour
     {
         interactText.gameObject.SetActive(false);
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        _isInAreaOfObject = false;
+        interactText.gameObject.SetActive(false);
+    }
     void OnTriggerEnter(Collider col)
     {
         _isInAreaOfObject = true;
