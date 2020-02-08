@@ -28,7 +28,7 @@ public class Break : MonoBehaviour
             TurnObject();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && manager.currentState == States.Break)
         {
             var t = rock.transform.GetChild(r.Next(0, rock.transform.childCount));
             if (t.transform.name.Contains("polySurface"))

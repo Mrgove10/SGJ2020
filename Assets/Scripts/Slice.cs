@@ -17,6 +17,7 @@ public class Slice : MonoBehaviour
     private bool stopSlide; //Variable qui permet de stopper ou non le slider (true le stoppe)
 
     public GameObject ROckTop;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -69,14 +70,15 @@ public class Slice : MonoBehaviour
     void VerifSlide()
     {
         //Si le slider est dans la bonne range
-        if (mainSlider.value >= SliderBorneBas.value && mainSlider.value <= sliderBorneHaut.value)
+        if (mainSlider.value >= SliderBorneBas.value && mainSlider.value <= sliderBorneHaut.value && Manager.currentState != States.Roam)
         {
+            stopSlide = true;
             resulText.text = "Ok !";
-            ROckTop.GetComponent<Rigidbody>().useGravity = true;    
-            Manager.currentState = States.Identify;
+            ROckTop.GetComponent<Rigidbody>().useGravity = true;
+            Manager.currentState = States.Roam;
 
             //Déplace les bornes
-            sliderBorneHaut.value = Random.Range(25, 80);
+            /*sliderBorneHaut.value = Random.Range(25, 80);
             SliderBorneBas.value = sliderBorneHaut.value - Random.Range(10, 25);
             if (pas <= 3.2f || pas >= -3.2f) //Augmente la vitesse jusqu'a un certain point
             {
@@ -88,9 +90,7 @@ public class Slice : MonoBehaviour
                 {
                     pas += 0.2f;
                 }
-            }
-
-            //Mettre ici les fonctions qui s'active quand l'utilisateur clique sur une bonne range
+            }*/
         }
         else
         {
@@ -104,8 +104,6 @@ public class Slice : MonoBehaviour
             {
                 pas = Mathf.Abs(pas);
             }
-
-            //Rajouter les fonctions à mettre quand l'utilisateur se trompe
         }
     }
 }

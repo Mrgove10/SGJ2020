@@ -14,7 +14,6 @@ public class Examine : MonoBehaviour
     // [ReadOnly]
     public bool examineMode;
 
-    public float distanceFromCamera = 2.5f;
 
     void Start()
     {
@@ -24,44 +23,12 @@ public class Examine : MonoBehaviour
 
     private void Update()
     {
-        ClickObject(); //Decide What Object To Examine
-
         TurnObject(); //Allows Object To Be Rotated
-
-        ExitExamineMode(); //Returns Object To Original Postion
-    }
-
-    void ClickObject()
-    {
-        if ( /*Input.GetMouseButtonDown(0)*/Input.GetKeyDown(KeyCode.E) && examineMode == false)
-        {
-            RaycastHit hit;
-            Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit))
-            {
-                //ClickedObject Will Be The Object Hit By The Raycast
-                clickedObject = hit.transform.gameObject;
-
-                //Save The Original Postion And Rotation
-                originaPosition = clickedObject.transform.position;
-                originalRotation = clickedObject.transform.rotation.eulerAngles;
-
-                //Now Move Object In Front Of Camera
-                clickedObject.transform.position = mainCam.transform.position + mainCam.transform.forward * distanceFromCamera;
-
-                //Pause The Game
-                Time.timeScale = 0;
-
-                //Turn Examine Mode To True
-                examineMode = true;
-            }
-        }
     }
 
     void TurnObject()
     {
-        if ( /*Input.GetMouseButton(0)*/ Input.GetKey(KeyCode.E) && examineMode)
+        if (examineMode)
         {
             float rotationSpeed = 15;
 
@@ -70,22 +37,6 @@ public class Examine : MonoBehaviour
 
             clickedObject.transform.Rotate(Vector3.up, -xAxis, Space.World);
             clickedObject.transform.Rotate(Vector3.right, yAxis, Space.World);
-        }
-    }
-
-    void ExitExamineMode()
-    {
-        if ( /*Input.GetMouseButtonDown(1)*/Input.GetKeyUp(KeyCode.E) && examineMode)
-        {
-            //Reset Object To Original Position
-            clickedObject.transform.position = originaPosition;
-            clickedObject.transform.eulerAngles = originalRotation;
-
-            //Unpause Game
-            Time.timeScale = 1;
-
-            //Return To Normal State
-            examineMode = false;
         }
     }
 }
