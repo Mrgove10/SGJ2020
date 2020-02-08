@@ -76,9 +76,10 @@ public class Slice : MonoBehaviour
             resulText.text = "Ok !";
             ROckTop.GetComponent<Rigidbody>().useGravity = true;
             Manager.currentState = States.Roam;
-
-            //Déplace les bornes
-            /*sliderBorneHaut.value = Random.Range(25, 80);
+        }
+        else
+        {
+            sliderBorneHaut.value = Random.Range(25, 80);
             SliderBorneBas.value = sliderBorneHaut.value - Random.Range(10, 25);
             if (pas <= 3.2f || pas >= -3.2f) //Augmente la vitesse jusqu'a un certain point
             {
@@ -90,10 +91,8 @@ public class Slice : MonoBehaviour
                 {
                     pas += 0.2f;
                 }
-            }*/
-        }
-        else
-        {
+            }
+            
             resulText.text = "Pas bon !";
             //Inverse le sens du slider
             if (signePas)
