@@ -29,6 +29,9 @@ public class CheckGoodColor : MonoBehaviour
             {
                 Destroy(_popUP);
             }
+            Debug.Log(rng.randomX);
+            Debug.Log(rng.randomY);
+
             //Je recup les couleurs autour du pixel cliqué
             Color[] colorsClicked = GetComponent<SpriteRenderer>().sprite.texture.GetPixels((int)Input.mousePosition.x, (int)Input.mousePosition.y, clickOffset, clickOffset);
 
@@ -78,8 +81,12 @@ public class CheckGoodColor : MonoBehaviour
                 {
                     _posWin.Add(positionClicked);
                     _isWin = true;
-                    Debug.Log("GG");
+                    Debug.Log("Trouver " + _posWin.Count);
                 }
+            }
+            if (_posWin.Count == 2)
+            {
+                Debug.Log("deux trouver GG");
             }
             Debug.Log(positionClicked);
 
