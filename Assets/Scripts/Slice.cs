@@ -55,7 +55,7 @@ public class Slice : MonoBehaviour
         }
         else
         {
-            manager.currentState = States.Roam;
+            manager.currentState = States.Identify;
             gameObject.SetActive(false);
             adaptiveMusic.ResetMusicAdapt();
         }
@@ -87,7 +87,7 @@ public class Slice : MonoBehaviour
             stopSlide = true;
             resulText.text = "Ok !";
             ROckTop.GetComponent<Rigidbody>().useGravity = true;
-            manager.currentState = States.Roam;
+            manager.currentState = States.Identify;
         }
         else
         {
