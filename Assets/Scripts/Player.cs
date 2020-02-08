@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public Animator Animator;
     public TMP_Text interactText;
 
+    public AdaptiveMusicScript adaptiveMusic;
+
     public GameObject objInteractWith;
     public GameObject rockPrefab;
     public GameObject breakPrefab;
@@ -22,12 +24,33 @@ public class Player : MonoBehaviour
     {
         objInteractWith = null;
         interactText.gameObject.SetActive(false);
+        adaptiveMusic.ResetMusicAdapt();
     }
     void OnTriggerEnter(Collider col)
     {
         objInteractWith = col.gameObject;
         interactText.gameObject.SetActive(true);
         Debug.Log(col);
+        int randomMusic = Random.Range(1, 5);
+        switch (randomMusic)
+        {
+            case 1:
+                adaptiveMusic.melodiaPlayV1 = true;
+                break;
+            case 2:
+                adaptiveMusic.melodiaPlayV2 = true;
+                break;
+            case 3:
+                adaptiveMusic.melodiaPlayV3 = true;
+                break;
+            case 4:
+                adaptiveMusic.melodiaPlayV4 = true;
+                break;
+            default:
+                break;
+        }
+        //adaptiveMusic
+
         /*if (col.gameObject.CompareTag("Pickable"))
         {
             manager.currentState = States.Break;

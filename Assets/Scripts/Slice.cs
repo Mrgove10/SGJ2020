@@ -12,6 +12,7 @@ public class Slice : MonoBehaviour
     public Slider SliderBorneBas; //La borne bas
     public TMP_Text resulText; //Text pour le test permetant de savoir si l'utilisateur se trompe ou non
     public float pas; //Le pas (la vitesse à laquelle le slider bouge)
+    public AdaptiveMusicScript adaptiveMusic;
 
     [Required]
     public Manager manager;
@@ -56,6 +57,7 @@ public class Slice : MonoBehaviour
         {
             manager.currentState = States.Roam;
             gameObject.SetActive(false);
+            adaptiveMusic.ResetMusicAdapt();
         }
     }
 

@@ -7,6 +7,8 @@ public class Break : MonoBehaviour
     public Manager manager;
     public GameObject rock;
     public Animator Animator;
+    public MusicManager musicManager;
+
     private Random r;
     private bool _once = false;
 
@@ -31,6 +33,7 @@ public class Break : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && manager.currentState == States.Break)
         {
+            musicManager.SonPiocheF();
             var t = rock.transform.GetChild(r.Next(0, rock.transform.childCount));
             if (t.transform.name.Contains("polySurface"))
             {

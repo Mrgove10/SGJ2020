@@ -60,4 +60,11 @@ public class AdaptiveMusicScript : MonoBehaviour
             melodiaV4.volume = 0;
         }
     }
+    public void ResetMusicAdapt()
+    {
+        melodiaPlayV1 = false;
+        melodiaPlayV2 = false;
+        melodiaPlayV3 = false;
+        melodiaPlayV4 = false;
+    }
 }
