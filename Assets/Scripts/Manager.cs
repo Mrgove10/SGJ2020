@@ -62,7 +62,7 @@ public class Manager : MonoBehaviour
         }
     }
 
-    public void GameOver()
+    private void GameOver()
     {
         Debug.Log("GAMEOVER");
     }
