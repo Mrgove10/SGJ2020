@@ -1162,6 +1162,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 819293113}
+    - target: {fileID: 4538547416896056567, guid: d8f8e6c44aaa62140bd88f1aaccfea9e,
+        type: 3}
+      propertyPath: musicManager
+      value: 
+      objectReference: {fileID: 90889346}
     - target: {fileID: 5263653045503486558, guid: d8f8e6c44aaa62140bd88f1aaccfea9e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1396,10 +1401,18 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 3727668209927079857}
+    - target: {fileID: 819293113, guid: ebdf5e99b769cf247aac640b3d8e5737, type: 3}
+      propertyPath: adaptiveMusic
+      value: 
+      objectReference: {fileID: 1647791235}
     - target: {fileID: 819293114, guid: ebdf5e99b769cf247aac640b3d8e5737, type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 3727668209927079857}
+    - target: {fileID: 819293114, guid: ebdf5e99b769cf247aac640b3d8e5737, type: 3}
+      propertyPath: musicManager
+      value: 
+      objectReference: {fileID: 90889346}
     - target: {fileID: 1237135557835855197, guid: ebdf5e99b769cf247aac640b3d8e5737,
         type: 3}
       propertyPath: imgs.Array.data[0]
