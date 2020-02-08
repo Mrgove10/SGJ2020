@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public TMP_Text interactText;
 
     public GameObject objInteractWith;
+    public GameObject rockPrefab;
+    public GameObject breakPrefab;
 
     private bool _once = false;
 
