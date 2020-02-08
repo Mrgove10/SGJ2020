@@ -90,6 +90,18 @@
             </e>
           </e>
         </e>
+        <e p="Samples" t="Include">
+          <e p="Polybrush" t="Include">
+            <e p="1.0.1" t="Include">
+              <e p="Shader Examples (Standard)" t="Include">
+                <e p="Shader" t="Include">
+                  <e p="StandardTextureBlend.shader" t="Include" />
+                  <e p="StandardVertexColor.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="CheckGoodColor.cs" t="Include" />
           <e p="Examine.cs" t="Include" />
@@ -98,6 +110,7 @@
           <e p="Manager.cs" t="Include" />
           <e p="Mouvement.cs" t="Include" />
           <e p="PlayerHover.cs" t="Include" />
+          <e p="RandomAdd.cs" t="Include" />
           <e p="SliderScript.cs" t="Include" />
           <e p="States.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />

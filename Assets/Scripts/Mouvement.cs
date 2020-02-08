@@ -11,7 +11,7 @@ public class Mouvement : MonoBehaviour
     {
         if (manager.currentState == States.Roam)
         {
-            transform.Rotate(0.0f, 0.0f, -Input.GetAxis("Horizontal") * speed * Time.deltaTime, Space.World);
+            transform.Rotate(0.0f, 0.0f, Input.GetAxis("Horizontal") * speed * Time.deltaTime, Space.World);
             transform.Rotate(-Input.GetAxis("Vertical") * speed * Time.deltaTime, 0.0f, 0.0f, Space.World);
         }
     }
