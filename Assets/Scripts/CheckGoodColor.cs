@@ -33,7 +33,7 @@ public class CheckGoodColor : MonoBehaviour
             Debug.Log(rng.randomY);
 
             //Je recup les couleurs autour du pixel cliqué
-            Color[] colorsClicked = GetComponent<SpriteRenderer>().sprite.texture.GetPixels((int)Input.mousePosition.x, (int)Input.mousePosition.y, clickOffset, clickOffset);
+            Color[] colorsClicked = GetComponent<SpriteRenderer>().sprite.texture.GetPixels((int)Input.mousePosition.x - rng.minX, (int)Input.mousePosition.y , clickOffset, clickOffset);
 
             //La couleur du pixel cliqué
             Color colorClicked = GetComponent<SpriteRenderer>().sprite.texture.GetPixel((int)Input.mousePosition.x, (int)Input.mousePosition.y);
