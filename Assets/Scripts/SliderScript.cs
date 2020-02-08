@@ -77,6 +77,7 @@ public class SliderScript : MonoBehaviour
         {
             resulText.text = "Ok !";
             Manager.currentState = States.Identify;
+            
             //Déplace les bornes
             sliderBorneHaut.value = Random.Range(25, 80);
             SliderBorneBas.value = sliderBorneHaut.value - Random.Range(10, 25);
