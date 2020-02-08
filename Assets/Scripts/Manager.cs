@@ -18,6 +18,8 @@ public class Manager : MonoBehaviour
     public GameObject planet;
     public GameObject rock;
 
+    public Player player;
+
 
     private void Start()
     {

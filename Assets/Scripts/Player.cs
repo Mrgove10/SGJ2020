@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
     public GameObject rockPrefab;
     public GameObject breakPrefab;
 
-    private bool _once = false;
 
     private void Start()
     {
@@ -40,9 +39,8 @@ public class Player : MonoBehaviour
         Animator.SetFloat("Blend X", Input.GetAxis("Horizontal"));
         Animator.SetFloat("Blend Y", Input.GetAxis("Vertical"));
 
-        if (Input.GetKeyDown(KeyCode.Space) && objInteractWith && !_once)
+        if (Input.GetKeyDown(KeyCode.Space) && objInteractWith && manager.currentState == States.Roam)
         {
-            _once = true;
             manager.currentState = States.Break;
             interactText.gameObject.SetActive(false);
         }
