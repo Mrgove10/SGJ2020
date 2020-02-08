@@ -22,15 +22,24 @@ public class CheckGoodColor : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //PopUP = le texte qui s'affiche a l'emplacement du clic
             if (_popUP != null)
             {
                 Destroy(_popUP);
             }
+            //Je recup les couleurs autour du pixel cliqué
             Color[] colorsClicked = GetComponent<SpriteRenderer>().sprite.texture.GetPixels((int)Input.mousePosition.x, (int)Input.mousePosition.y, clickOffset, clickOffset);
+
+            //La couleur du pixel cliqué
             Color colorClicked = GetComponent<SpriteRenderer>().sprite.texture.GetPixel((int)Input.mousePosition.x, (int)Input.mousePosition.y);
+
+            //position de ce pixel dans la camera
             Vector3 positionClicked = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
             var worldPos = Camera.main.GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition);
-            //Debug.Log("color of the pixel clicked = " + GetComponent<SpriteRenderer>().sprite.texture.GetPixel((int)Input.mousePosition.x, (int)Input.mousePosition.y).grayscale);
+
+            Debug.Log("color of the pixel clicked = " + GetComponent<SpriteRenderer>().sprite.texture.GetPixel((int)Input.mousePosition.x, (int)Input.mousePosition.y));
+
+            //je creer mes couleurs bornes
             var maxGoodColor = GoodColor;
             var minGoodColor = GoodColor;
             maxGoodColor.r += tolerence;
@@ -39,15 +48,16 @@ public class CheckGoodColor : MonoBehaviour
             minGoodColor.r -= tolerence;
             minGoodColor.g -= tolerence;
             minGoodColor.b -= tolerence;
+
+            //Si j'ai deja cliqué sur une bonne couleur
             if(_posWin.Count > 0)
             {
-
-                Debug.Log(_posWin[0]);
-                Debug.Log(positionClicked);
-                Debug.Log(_posWin[0].x + clickOffset <= positionClicked.x && positionClicked.x <= _posWin[0].x - clickOffset);
-                Debug.Log(_posWin[0].y + clickOffset < positionClicked.y && positionClicked.y < _posWin[0].y - clickOffset);
-                if ((positionClicked.x + clickOffset <= _posWin[0].x  && positionClicked.y + clickOffset <= _posWin[0].y )
-                    &&  (positionClicked.x - clickOffset >= _posWin[0].x  && positionClicked.y - clickOffset >= _posWin[0].x ))
+                //Debug.Log(_posWin[0]);
+                //Debug.Log(positionClicked);
+                Debug.Log(positionClicked.x <= _posWin[0].x - clickOffset || positionClicked.x >= _posWin[0].x + clickOffset);
+                Debug.Log(positionClicked.y <= _posWin[0].y - clickOffset || positionClicked.y >= _posWin[0].y + clickOffset);
+                if (!(positionClicked.x <= _posWin[0].x - clickOffset*2 || positionClicked.x >= _posWin[0].x + clickOffset*2)
+                    && !(positionClicked.y <= _posWin[0].y - clickOffset*2 || positionClicked.y >= _posWin[0].y + clickOffset*2))
                 {
                     //do not count
                     Debug.Log("Do not count");
@@ -55,8 +65,11 @@ public class CheckGoodColor : MonoBehaviour
                 }
 
             }
+
+            //Je parcourt mon tableau de couleurs
             foreach (Color color in colorsClicked)
             {
+                //Si la couleur que je regarde dans le tab correspond a une bonne couleur
                 if (maxGoodColor.r >= color.r && maxGoodColor.g >= color.g && maxGoodColor.b >= color.b &&
                 minGoodColor.r <= color.r && minGoodColor.g <= color.g && minGoodColor.b <= color.b 
                 && _isWin == false)
@@ -67,19 +80,15 @@ public class CheckGoodColor : MonoBehaviour
                 }
             }
             Debug.Log(positionClicked);
+
+            //J'instacie ma popup avec mon texte (pour le moment c'est du lorem)
             var popUPgameObject = Instantiate(showMineralUI, positionClicked, Quaternion.identity);
             var popUPText = popUPgameObject.GetComponentInChildren<TMP_Text>();
             popUPText.transform.position = positionClicked;
             popUPText.text = Random.Range(0, 15).ToString();
             _popUP = popUPgameObject;
-            //age du minerais (range) -> 
-            //nb de minerais analyser (reussite)
-            //affichage incertitude
-            //
-            //diminue le score (rater)
-            //
-            Random.Range(23, 38);
-            //Instantiate(showMineralUI, positionClicked, Quaternion.identity);
+
+            //repase is win a false
             _isWin = false;
 
         }
