@@ -103,7 +103,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="Animation.cs" t="Include" />
           <e p="CheckGoodColor.cs" t="Include" />
           <e p="Examine.cs" t="Include" />
           <e p="Interaction.cs" t="Include" />
@@ -111,8 +110,7 @@
           <e p="Manager.cs" t="Include" />
           <e p="MissionWaypoint.cs" t="Include" />
           <e p="Mouvement.cs" t="Include" />
-          <e p="PlayerHover.cs" t="Include" />
-          <e p="RandomAdd.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
           <e p="RandomizeImage.cs" t="Include" />
           <e p="SliderScript.cs" t="Include" />
           <e p="States.cs" t="Include" />

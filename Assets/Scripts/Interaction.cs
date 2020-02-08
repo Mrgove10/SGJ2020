@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
@@ -18,7 +16,7 @@ public class Interaction : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             var t = rock.transform.GetChild(r.Next(0, rock.transform.childCount));
             if (t.transform.name.Contains("polySurface"))
