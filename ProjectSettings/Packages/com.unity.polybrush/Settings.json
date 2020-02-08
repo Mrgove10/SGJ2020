@@ -81,12 +81,12 @@
             {
                 "type": "UnityEditor.Polybrush.PrefabLoadout, Unity.Polybrush.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ScatteringEditor.userLoadout",
-                "value": "{\"m_Value\":{\"infos\":[]}}"
+                "value": "{\"m_Value\":{\"infos\":[{\"palette\":{\"fileID\":11400000,\"guid\":\"6a348f2013fe0054699b417409b51c8f\",\"type\":2},\"prefab\":{\"fileID\":265620491614886541,\"guid\":\"537fa140a2c04ea4b858eeabb99969ab\",\"type\":3}},{\"palette\":{\"fileID\":11400000,\"guid\":\"af2e47db194922e4c9f3301fc6b64666\",\"type\":2},\"prefab\":{\"fileID\":7301958743223812031,\"guid\":\"cbe4294cb870b5a4da30078020c86f35\",\"type\":3}}]}}"
             },
             {
                 "type": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "ScatteringEditor.PreviewThumSize",
-                "value": "{\"m_Value\":107}"
+                "value": "{\"m_Value\":70}"
             },
             {
                 "type": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",

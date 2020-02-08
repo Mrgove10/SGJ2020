@@ -15,6 +15,10 @@ public class Manager : MonoBehaviour
     public GameObject FPSView;
     private Camera mainCamera;
 
+    public GameObject planet;
+    public GameObject rock;
+
+
     private void Start()
     {
         mainCamera = Camera.main;
@@ -27,15 +31,19 @@ public class Manager : MonoBehaviour
         {
             case States.Roam:
                 mainCamera.transform.position = DefaultView.transform.position;
+                ShowElements();
                 break;
             case States.Break:
                 mainCamera.transform.position = FPSView.transform.position;
+                ShowElements();
                 break;
             case States.Slice:
                 mainCamera.transform.position = FPSView.transform.position;
+                ShowElements();
                 break;
             case States.Identify:
                 mainCamera.transform.position = FPSView.transform.position;
+                HideElements();
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -58,4 +66,17 @@ public class Manager : MonoBehaviour
     {
         Debug.Log("GAMEOVER");
     }
+
+    private void HideElements()
+    {
+        planet.SetActive(false);
+        rock.SetActive(false);
+    }
+
+    private void ShowElements()
+    {
+        planet.SetActive(true);
+        rock.SetActive(true);
+    }
+
 }
