@@ -6,7 +6,7 @@ using UnityEngine;
     {
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 Debug.Log("interaction");
             }
