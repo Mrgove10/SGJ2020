@@ -1,14 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-#if UNITY_EDITOR
 using UnityEditor;
-
-#else
-using UnityEngine;
-#endif
 
 public class MainMenuScript : MonoBehaviour
 {
@@ -34,18 +27,13 @@ public class MainMenuScript : MonoBehaviour
 
         creditsPanel.SetActive(false);
 
-        InvokeRepeating(nameof(Animation), 1f, 2f);
+        InvokeRepeating(nameof(Animation), 1f, 7f);
     }
 
     void Animation()
     {
         robotAnimator.SetInteger("Emote", 1);
         Debug.Log("Annimation Launched");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     void StartGame()

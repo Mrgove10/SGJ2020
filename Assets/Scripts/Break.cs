@@ -6,7 +6,7 @@ public class Break : MonoBehaviour
 {
     public Manager manager;
     public GameObject rock;
-
+    public Animator Animator;
     private Random r;
 
     private void Start()
@@ -24,6 +24,7 @@ public class Break : MonoBehaviour
         if (manager.currentState == States.Break || manager.currentState == States.Slice)
         {
             rock.SetActive(true);
+            //Animator.SetInteger("Arm Open",1);
             TurnObject();
         }
 

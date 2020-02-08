@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        Animator.SetInteger("Emote", 0);
         Animator.SetFloat("Blend X", Input.GetAxis("Horizontal"));
         Animator.SetFloat("Blend Y", Input.GetAxis("Vertical"));
     }
