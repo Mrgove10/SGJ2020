@@ -13,9 +13,11 @@ public class Manager : MonoBehaviour
     public GameObject DefaultView;
 
     public GameObject FPSView;
+    private Camera mainCamera;
 
     private void Start()
     {
+        mainCamera = Camera.main;
         InvokeRepeating(nameof(RemoveTime), 1.0f, 1.0f);
     }
 
@@ -24,16 +26,16 @@ public class Manager : MonoBehaviour
         switch (currentState)
         {
             case States.Roam:
-                Camera.main.transform.position = DefaultView.transform.position;
+                mainCamera.transform.position = DefaultView.transform.position;
                 break;
             case States.Break:
-                Camera.main.transform.position = FPSView.transform.position;
+                mainCamera.transform.position = FPSView.transform.position;
                 break;
             case States.Slice:
-                Camera.main.transform.position = FPSView.transform.position;
+                mainCamera.transform.position = FPSView.transform.position;
                 break;
             case States.Identify:
-                Camera.main.transform.position = FPSView.transform.position;
+                mainCamera.transform.position = FPSView.transform.position;
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
