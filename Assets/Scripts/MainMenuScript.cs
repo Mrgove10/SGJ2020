@@ -18,18 +18,25 @@ public class MainMenuScript : MonoBehaviour
     public Button boutonQuit;
     public Button boutonCreditResume;
 
+    public Button boutonNextKey;
+    public Button boutonNextInfo;
+    
     [Header("Animator")]
     public Animator robotAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
-        boutonStart.onClick.AddListener(StartGame);
+        boutonStart.onClick.AddListener(GotoInfo);
         boutonFreeRoam.onClick.AddListener(StartFreeRom);
         boutonCredits.onClick.AddListener(StartCredits);
         boutonQuit.onClick.AddListener(QuitGame);
         boutonCreditResume.onClick.AddListener(ResumeCredits);
 
+        
+        boutonNextInfo.onClick.AddListener(gotoKeys);
+        boutonNextKey.onClick.AddListener(StartGame);
+        
         creditsPanel.SetActive(false);
 
         InvokeRepeating(nameof(Animation), 1f, 7f);
@@ -43,9 +50,25 @@ public class MainMenuScript : MonoBehaviour
 
     void StartGame()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadSceneAsync("Main");
     }
-
+    
+    void GotoInfo()
+    {
+        menuPanel.SetActive(false);
+        creditsPanel.SetActive(false);
+        keyPanel.SetActive(false);
+        infoPanel.SetActive(true);
+    }
+    
+    void gotoKeys()
+    {
+        menuPanel.SetActive(false);
+        creditsPanel.SetActive(false);
+        keyPanel.SetActive(true);
+        infoPanel.SetActive(false);
+    }
+        
     void StartFreeRom()
     {
         //A faire
