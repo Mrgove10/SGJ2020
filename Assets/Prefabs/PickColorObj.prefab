@@ -177,3 +177,5 @@ MonoBehaviour:
   GoodColor: {r: 0, g: 0, b: 0, a: 0}
   tolerence: 0.1
   clickOffset: 10
+  showMineralUI: {fileID: 1831613256473011164, guid: 0db615b40fd3ac8488c37d58cd91f73b,
+    type: 3}
