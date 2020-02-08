@@ -92,6 +92,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CheckGoodColor.cs" t="Include" />
+          <e p="Examine.cs" t="Include" />
           <e p="Interaction.cs" t="Include" />
           <e p="MainMenuScript.cs" t="Include" />
           <e p="Manager.cs" t="Include" />

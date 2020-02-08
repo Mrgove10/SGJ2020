@@ -212,9 +212,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bad769f2aa4925bbd361da2d7c8fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  MainUI: {fileID: 403603453491563397}
   timeText: {fileID: 4428032211607635060}
   scoreText: {fileID: 0}
-  manager: {fileID: 0}
+  BreakUI: {fileID: 5691040253480219398}
+  SliceUI: {fileID: 2156752820099730631}
+  ClickUI: {fileID: 2747916073650422646}
 --- !u!1 &4428032211607635066
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,8 +284,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Time \n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e2856da41fd8d824fae3bb4dc294d102, type: 2}
+  m_sharedMaterial: {fileID: 8573242622969968886, guid: e2856da41fd8d824fae3bb4dc294d102,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

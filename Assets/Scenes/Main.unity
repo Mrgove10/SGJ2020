@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -213,6 +213,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &368550637 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2956732070900306006, guid: ebdf5e99b769cf247aac640b3d8e5737,
+    type: 3}
+  m_PrefabInstance: {fileID: 6395772398241405504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &445269509
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  manager: {fileID: 3727668209927079857}
 --- !u!64 &642334483
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -717,34 +724,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4428032209788988561, guid: 33ddc9b83382dd546b60674a8717dcdd,
         type: 3}
-      propertyPath: scoreText
-      value: 
-      objectReference: {fileID: 9055957998459233695}
-    - target: {fileID: 4428032209788988561, guid: 33ddc9b83382dd546b60674a8717dcdd,
-        type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 3727668209927079857}
     - target: {fileID: 4428032209788988561, guid: 33ddc9b83382dd546b60674a8717dcdd,
         type: 3}
-      propertyPath: MainUI
+      propertyPath: scoreText
       value: 
-      objectReference: {fileID: 4428032210399567249}
-    - target: {fileID: 4428032209788988561, guid: 33ddc9b83382dd546b60674a8717dcdd,
-        type: 3}
-      propertyPath: BreakUI
-      value: 
-      objectReference: {fileID: 4428032210399567248}
-    - target: {fileID: 4428032209788988561, guid: 33ddc9b83382dd546b60674a8717dcdd,
-        type: 3}
-      propertyPath: SliceUI
-      value: 
-      objectReference: {fileID: 4428032210399567247}
-    - target: {fileID: 4428032209788988561, guid: 33ddc9b83382dd546b60674a8717dcdd,
-        type: 3}
-      propertyPath: ClickUI
-      value: 
-      objectReference: {fileID: 4428032210399567246}
+      objectReference: {fileID: 9055957998459233695}
     - target: {fileID: 4428032209788988566, guid: 33ddc9b83382dd546b60674a8717dcdd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -857,30 +844,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ddc9b83382dd546b60674a8717dcdd, type: 3}
---- !u!1 &4428032210399567246 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2747916073650422646, guid: 33ddc9b83382dd546b60674a8717dcdd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4428032210399567245}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4428032210399567247 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2156752820099730631, guid: 33ddc9b83382dd546b60674a8717dcdd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4428032210399567245}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4428032210399567248 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5691040253480219398, guid: 33ddc9b83382dd546b60674a8717dcdd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4428032210399567245}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4428032210399567249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 403603453491563397, guid: 33ddc9b83382dd546b60674a8717dcdd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4428032210399567245}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6395772398241405504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -903,6 +866,11 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 3727668209927079857}
+    - target: {fileID: 6395772397755934162, guid: ebdf5e99b769cf247aac640b3d8e5737,
+        type: 3}
+      propertyPath: rock
+      value: 
+      objectReference: {fileID: 368550637}
     - target: {fileID: 6395772397755934165, guid: ebdf5e99b769cf247aac640b3d8e5737,
         type: 3}
       propertyPath: m_LocalPosition.x
