@@ -16,6 +16,17 @@ public class Interaction : MonoBehaviour
 
     private void Update()
     {
+        if (manager.currentState != States.Break)
+        {
+            rock.SetActive(false);
+        }
+
+        if (manager.currentState == States.Break)
+        {
+            rock.SetActive(true);
+            TurnObject();
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             var t = rock.transform.GetChild(r.Next(0, rock.transform.childCount));
@@ -26,11 +37,7 @@ public class Interaction : MonoBehaviour
             }
         }
 
-        if (manager.currentState == States.Break)
-        {
-            TurnObject();
-        }
-
+        // no mode pieces left
         if (rock.transform.childCount <= 2)
         {
             manager.currentState = States.Slice;
