@@ -5,15 +5,20 @@ using UnityEditor;
 
 public class MainMenuScript : MonoBehaviour
 {
+    [Header("GameObejcts")]
     public GameObject menuPanel;
     public GameObject creditsPanel;
-
+    public GameObject keyPanel;
+    public GameObject infoPanel;
+    
+    [Header("Buttons")]
     public Button boutonStart;
     public Button boutonFreeRoam;
     public Button boutonCredits;
     public Button boutonQuit;
     public Button boutonCreditResume;
 
+    [Header("Animator")]
     public Animator robotAnimator;
 
     // Start is called before the first frame update
