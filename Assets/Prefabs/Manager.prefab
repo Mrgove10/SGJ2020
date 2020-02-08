@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 8180838141686992546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,3 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399eb1c292a1c1d48aef52f324395688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: 0
+  time: 250
+  currentState: 0
+  DefaultView: {fileID: 0}
+  musicManager: {fileID: 0}
+  FPSView: {fileID: 0}
+  planet: {fileID: 0}
+  rock: {fileID: 0}
+  player: {fileID: 0}

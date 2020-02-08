@@ -5491,9 +5491,10 @@ MonoBehaviour:
   manager: {fileID: 0}
   Animator: {fileID: 6395772398241405507}
   interactText: {fileID: 1543925067}
+  adaptiveMusic: {fileID: 0}
   objInteractWith: {fileID: 0}
-  rockPrefab: {fileID: 0}
-  breakPrefab: {fileID: 0}
+  rockPrefab: {fileID: 2956732070900306006}
+  breakPrefab: {fileID: 1864683958}
 --- !u!114 &819293114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5509,6 +5510,7 @@ MonoBehaviour:
   manager: {fileID: 0}
   rock: {fileID: 2956732070900306006}
   Animator: {fileID: 0}
+  musicManager: {fileID: 0}
 --- !u!1 &6395772398019380894
 GameObject:
   m_ObjectHideFlags: 0
