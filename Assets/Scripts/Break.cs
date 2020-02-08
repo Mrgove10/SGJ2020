@@ -8,6 +8,7 @@ public class Break : MonoBehaviour
     public GameObject rock;
     public Animator Animator;
     private Random r;
+    private bool _once = false;
 
     private void Start()
     {
@@ -39,9 +40,10 @@ public class Break : MonoBehaviour
         }
 
         // no mode pieces left
-        if (rock.transform.childCount <= 2)
+        if (rock.transform.childCount <= 2 && _once == false)
         {
             manager.currentState = States.Slice;
+            _once = true;
         }
     }
 

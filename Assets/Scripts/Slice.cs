@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using NaughtyAttributes;
 
 public class Slice : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class Slice : MonoBehaviour
     public TMP_Text resulText; //Text pour le test permetant de savoir si l'utilisateur se trompe ou non
     public float pas; //Le pas (la vitesse à laquelle le slider bouge)
 
-    public Manager Manager;
+    [Required]
+    public Manager manager;
     private bool signePas; //Le signe du pas (négatif ou positif)
     private bool stopSlide; //Variable qui permet de stopper ou non le slider (true le stoppe)
 
@@ -49,6 +51,11 @@ public class Slice : MonoBehaviour
         {
             ActiveSlide();
         }
+        else
+        {
+            manager.currentState = States.Roam;
+            gameObject.SetActive(false);
+        }
     }
 
     void ActiveSlide()
@@ -71,14 +78,14 @@ public class Slice : MonoBehaviour
     void VerifSlide()
     {
         //Si le slider est dans la bonne range
-        if (mainSlider.value >= SliderBorneBas.value && mainSlider.value <= sliderBorneHaut.value && Manager.currentState != States.Roam)
+        if (mainSlider.value >= SliderBorneBas.value && mainSlider.value <= sliderBorneHaut.value && manager.currentState != States.Roam)
         {
             Destroy(player.objInteractWith);
             player.objInteractWith = null;
             stopSlide = true;
             resulText.text = "Ok !";
             ROckTop.GetComponent<Rigidbody>().useGravity = true;
-            Manager.currentState = States.Roam;
+            manager.currentState = States.Roam;
         }
         else
         {
