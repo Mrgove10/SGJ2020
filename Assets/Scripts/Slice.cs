@@ -16,7 +16,7 @@ public class Slice : MonoBehaviour
     private bool signePas; //Le signe du pas (négatif ou positif)
     private bool stopSlide; //Variable qui permet de stopper ou non le slider (true le stoppe)
 
-
+    public GameObject ROckTop;
     // Start is called before the first frame update
     void Start()
     {
@@ -72,6 +72,7 @@ public class Slice : MonoBehaviour
         if (mainSlider.value >= SliderBorneBas.value && mainSlider.value <= sliderBorneHaut.value)
         {
             resulText.text = "Ok !";
+            ROckTop.GetComponent<Rigidbody>().useGravity = true;    
             Manager.currentState = States.Identify;
 
             //Déplace les bornes

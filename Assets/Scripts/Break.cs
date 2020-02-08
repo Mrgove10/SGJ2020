@@ -21,7 +21,7 @@ public class Break : MonoBehaviour
             rock.SetActive(false);
         }
 
-        if (manager.currentState == States.Break)
+        if (manager.currentState == States.Break || manager.currentState == States.Slice)
         {
             rock.SetActive(true);
             TurnObject();
