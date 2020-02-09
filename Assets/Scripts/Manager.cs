@@ -34,9 +34,20 @@ public class Manager : MonoBehaviour
     private bool _onceinstanciate;
     public Player player;
 
+    public GameObject steins;
+
+    public Texture eyesUpdate;
+    public Texture eyesDead;
+    public Texture eyesDiamond;
+    public Texture eyesStein;
+    public Texture eyesPac;
+    public Texture eyesUnlock;
+
+
 
     private void Start()
     {
+        steins.GetComponent<Renderer>().material.SetTexture("_EmissionMap", eyesStein);
         mainCamera = Camera.main;
         InvokeRepeating(nameof(RemoveTime), 1.0f, 1.0f);
         _once1 = true;
@@ -50,6 +61,7 @@ public class Manager : MonoBehaviour
         switch (currentState)
         {
             case States.Roam:
+                
                 ShowMainHUD();
                 mainCamera.transform.position = DefaultView.transform.position;
                 ShowElements();
@@ -126,10 +138,20 @@ public class Manager : MonoBehaviour
         {
             GameOver();
         }
+        if (time == 5)
+        {
+            steins.GetComponent<Renderer>().material.SetTexture("_EmissionMap", eyesDead);
+        }
+        else
+        {
+
+            steins.GetComponent<Renderer>().material.SetTexture("_EmissionMap", eyesStein);
+        }
     }
 
     private void GameOver()
     {
+        steins.GetComponent<Renderer>().material.SetTexture("_EmissionMap", eyesUnlock);
         Debug.Log("Game over");
         currentState = States.End;
     }
