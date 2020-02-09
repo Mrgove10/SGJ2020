@@ -15,7 +15,7 @@ public class Rock : MonoBehaviour
     public void Start()
     {
         switch (color)
-        {
+        {    
             case EColor.rouge:
                 rockMusic.clip = musicSource.melodiaMusicV1;
                 break;

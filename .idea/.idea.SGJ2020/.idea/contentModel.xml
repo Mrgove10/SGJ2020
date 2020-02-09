@@ -90,15 +90,6 @@
             </e>
           </e>
         </e>
-        <e p="Medias" t="Include">
-          <e p="Skybox" t="Include">
-            <e p="UI" t="Include">
-              <e p="UI écran résultats" t="Include">
-                <e p="base texte.txt" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
         <e p="Samples" t="Include">
           <e p="Polybrush" t="Include">
             <e p="1.0.1" t="Include">
@@ -157,6 +148,11 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="UI" t="Include">
+          <e p="UI écran résultats" t="Include">
+            <e p="base texte.txt" t="Include" />
           </e>
         </e>
       </e>
