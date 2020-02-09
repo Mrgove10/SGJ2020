@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 174610140}
   - component: {fileID: 174610142}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,7 +298,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &174610140
 Rigidbody:
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 204310143}
   - component: {fileID: 204310142}
   m_Layer: 0
-  m_Name: Capsule (3)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -462,7 +462,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -6.696, y: 112.12, z: 94.052}
 --- !u!82 &204310142
 AudioSource:
@@ -669,7 +669,7 @@ GameObject:
   - component: {fileID: 237230666}
   - component: {fileID: 237230665}
   m_Layer: 0
-  m_Name: Capsule (20)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -894,7 +894,7 @@ GameObject:
   - component: {fileID: 260814922}
   - component: {fileID: 260814921}
   m_Layer: 0
-  m_Name: Capsule (10)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -912,7 +912,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -25.957, y: 49.578003, z: 129.998}
 --- !u!82 &260814921
 AudioSource:
@@ -1652,7 +1652,7 @@ GameObject:
   - component: {fileID: 498643015}
   - component: {fileID: 498643020}
   m_Layer: 0
-  m_Name: Capsule (2)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1670,7 +1670,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 3
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -7.2910004, y: 2.532, z: -9.703}
 --- !u!54 &498643015
 Rigidbody:
@@ -1877,7 +1877,7 @@ GameObject:
   - component: {fileID: 499302232}
   - component: {fileID: 499302231}
   m_Layer: 0
-  m_Name: Capsule (5)
+  m_Name: Timer
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1895,7 +1895,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -11.166, y: 67.768005, z: 225.22}
 --- !u!82 &499302231
 AudioSource:
@@ -2171,7 +2171,7 @@ GameObject:
   - component: {fileID: 559277381}
   - component: {fileID: 559277380}
   m_Layer: 0
-  m_Name: Capsule (18)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2408,7 +2408,7 @@ GameObject:
   - component: {fileID: 678476106}
   - component: {fileID: 678476105}
   m_Layer: 0
-  m_Name: Capsule (11)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2426,7 +2426,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -42.938004, y: 76.73801, z: 198.596}
 --- !u!82 &678476105
 AudioSource:
@@ -2648,24 +2648,24 @@ Transform:
   m_Children:
   - {fileID: 2107041790}
   - {fileID: 451293942}
+  - {fileID: 1364099076}
+  - {fileID: 869350186}
+  - {fileID: 1300505684}
+  - {fileID: 2101876572}
+  - {fileID: 499302230}
   - {fileID: 174610139}
   - {fileID: 498643014}
-  - {fileID: 1364099076}
   - {fileID: 204310141}
   - {fileID: 1752756248}
-  - {fileID: 499302230}
   - {fileID: 1498261796}
   - {fileID: 1434951446}
   - {fileID: 1099614762}
-  - {fileID: 2101876572}
   - {fileID: 260814920}
   - {fileID: 678476104}
-  - {fileID: 1300505684}
   - {fileID: 1484473571}
   - {fileID: 1903398138}
   - {fileID: 1945164543}
   - {fileID: 721709556}
-  - {fileID: 869350186}
   - {fileID: 559277379}
   - {fileID: 1686487006}
   - {fileID: 237230664}
@@ -2715,7 +2715,7 @@ GameObject:
   - component: {fileID: 721709558}
   - component: {fileID: 721709557}
   m_Layer: 0
-  m_Name: Capsule (16)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2733,7 +2733,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: -21.819, y: 23.237001, z: 34.434002}
 --- !u!82 &721709557
 AudioSource:
@@ -2970,7 +2970,7 @@ GameObject:
   - component: {fileID: 869350188}
   - component: {fileID: 869350187}
   m_Layer: 0
-  m_Name: Capsule (17)
+  m_Name: TImer
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2988,7 +2988,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 19
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -54.737003, y: 49.747, z: 97.32001}
 --- !u!82 &869350187
 AudioSource:
@@ -3353,7 +3353,7 @@ GameObject:
   - component: {fileID: 1099614764}
   - component: {fileID: 1099614763}
   m_Layer: 0
-  m_Name: Capsule (8)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3371,7 +3371,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 6.4220004, y: 16.767, z: 229.806}
 --- !u!82 &1099614763
 AudioSource:
@@ -3578,7 +3578,7 @@ GameObject:
   - component: {fileID: 1300505686}
   - component: {fileID: 1300505685}
   m_Layer: 0
-  m_Name: Capsule (12)
+  m_Name: Timer
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3596,7 +3596,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 14
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -76.219, y: 135.498, z: 35.323}
 --- !u!82 &1300505685
 AudioSource:
@@ -3803,7 +3803,7 @@ GameObject:
   - component: {fileID: 1364099078}
   - component: {fileID: 1364099077}
   m_Layer: 0
-  m_Name: Capsule (1)
+  m_Name: Timer
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3821,7 +3821,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 37.231003, y: 69.135, z: 56.843002}
 --- !u!82 &1364099077
 AudioSource:
@@ -4076,7 +4076,7 @@ GameObject:
   - component: {fileID: 1434951448}
   - component: {fileID: 1434951447}
   m_Layer: 0
-  m_Name: Capsule (7)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4094,7 +4094,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -40.759003, y: 10.359, z: 174.42401}
 --- !u!82 &1434951447
 AudioSource:
@@ -4301,7 +4301,7 @@ GameObject:
   - component: {fileID: 1484473573}
   - component: {fileID: 1484473572}
   m_Layer: 0
-  m_Name: Capsule (13)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4319,7 +4319,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: -73.814, y: 192.174, z: 42.361004}
 --- !u!82 &1484473572
 AudioSource:
@@ -4526,7 +4526,7 @@ GameObject:
   - component: {fileID: 1498261798}
   - component: {fileID: 1498261797}
   m_Layer: 0
-  m_Name: Capsule (6)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4544,7 +4544,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 37.671, y: -0.264, z: 134.455}
 --- !u!82 &1498261797
 AudioSource:
@@ -4848,7 +4848,7 @@ GameObject:
   - component: {fileID: 1686487007}
   - component: {fileID: 1933076963}
   m_Layer: 0
-  m_Name: Capsule (19)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5073,7 +5073,7 @@ GameObject:
   - component: {fileID: 1752756250}
   - component: {fileID: 1752756249}
   m_Layer: 0
-  m_Name: Capsule (4)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5091,7 +5091,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -27.043001, y: 94.54201, z: 156.617}
 --- !u!82 &1752756249
 AudioSource:
@@ -5298,7 +5298,7 @@ GameObject:
   - component: {fileID: 1903398140}
   - component: {fileID: 1903398139}
   m_Layer: 0
-  m_Name: Capsule (14)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5316,7 +5316,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: -50.148003, y: 111.397, z: 131.772}
 --- !u!82 &1903398139
 AudioSource:
@@ -5619,7 +5619,7 @@ GameObject:
   - component: {fileID: 1945164545}
   - component: {fileID: 1945164544}
   m_Layer: 0
-  m_Name: Capsule (15)
+  m_Name: Points
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5637,7 +5637,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: -49.33, y: 202.18599, z: 84.29}
 --- !u!82 &1945164544
 AudioSource:
@@ -5864,7 +5864,7 @@ GameObject:
   - component: {fileID: 2101876574}
   - component: {fileID: 2101876573}
   m_Layer: 0
-  m_Name: Capsule (9)
+  m_Name: Timer
   m_TagString: Pickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5882,7 +5882,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 680088488}
-  m_RootOrder: 11
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -30.176, y: 3.818, z: 131.815}
 --- !u!82 &2101876573
 AudioSource:
@@ -6611,6 +6611,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 4428032211607635061, guid: 33ddc9b83382dd546b60674a8717dcdd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4428032211607635066, guid: 33ddc9b83382dd546b60674a8717dcdd,
         type: 3}
       propertyPath: m_IsActive
@@ -6704,6 +6709,31 @@ PrefabInstance:
     - target: {fileID: 8833645153240533981, guid: 33ddc9b83382dd546b60674a8717dcdd,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136218972536140443, guid: 33ddc9b83382dd546b60674a8717dcdd,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136218972536140443, guid: 33ddc9b83382dd546b60674a8717dcdd,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136218972536140443, guid: 33ddc9b83382dd546b60674a8717dcdd,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136218972536140443, guid: 33ddc9b83382dd546b60674a8717dcdd,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136218972536140443, guid: 33ddc9b83382dd546b60674a8717dcdd,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

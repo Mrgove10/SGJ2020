@@ -91,9 +91,11 @@
           </e>
         </e>
         <e p="Medias" t="Include">
-          <e p="UI" t="Include">
-            <e p="UI écran résultats" t="Include">
-              <e p="base texte.txt" t="Include" />
+          <e p="Skybox" t="Include">
+            <e p="UI" t="Include">
+              <e p="UI écran résultats" t="Include">
+                <e p="base texte.txt" t="Include" />
+              </e>
             </e>
           </e>
         </e>

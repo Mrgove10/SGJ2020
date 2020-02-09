@@ -104,9 +104,10 @@ public class ClickScript : MonoBehaviour
             manager.currentState = States.Roam;
             clicks = 0;
             manager.nbGisement ++;
+            //REWARDS
             if (manager.player.objInteractWith.GetComponent<Rock>().timeAdder)
             {
-                manager.time += 10;
+                manager.time += 25;
             }
             else
             {
