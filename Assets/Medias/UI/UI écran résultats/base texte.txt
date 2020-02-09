@@ -1,0 +1,9 @@
+Bravo!
+
+Vous avez réussi à analyser ${XX} gisements métalliques.
+L'âge ainsi calculé est de ${XX} Millions d'années 
+(cet âge correspond à la collision alpine).
+
+
+Rejouez pour améliorer la précision de votre âge
+en datant encore plus de gisements !
