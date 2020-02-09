@@ -12,7 +12,8 @@ public class Manager : MonoBehaviour
     [Header("GameObjects")]
     public GameObject DefaultView;
     public MusicManager musicManager;
-
+    public Animator animation;
+    
     public GameObject FPSView;
     private Camera mainCamera;
 
@@ -51,9 +52,11 @@ public class Manager : MonoBehaviour
                 break;
             case States.Break:
                 mainCamera.transform.position = FPSView.transform.position;
+                mainCamera.fieldOfView = 73;
                 ShowElements();
                 if (_once1)
                 {
+                    animation.SetInteger("Arm Open",1);
                     musicManager.SonParleF();
                     _once1 = false;
                     _once3 = true;
@@ -61,9 +64,13 @@ public class Manager : MonoBehaviour
                 break;
             case States.Slice:
                 mainCamera.transform.position = FPSView.transform.position;
+                mainCamera.fieldOfView = 60;
                 ShowElements();
                 if (_once2)
                 {
+                    
+                    animation.SetInteger("Arm Open",0);
+                    animation.SetInteger("Arm Close",1);
                     musicManager.SonParleF();
                     _once2 = false;
                 }

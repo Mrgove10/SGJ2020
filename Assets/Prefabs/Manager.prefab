@@ -48,6 +48,7 @@ MonoBehaviour:
   currentState: 0
   DefaultView: {fileID: 0}
   musicManager: {fileID: 0}
+  animation: {fileID: 0}
   FPSView: {fileID: 0}
   planet: {fileID: 0}
   rock: {fileID: 0}
