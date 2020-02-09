@@ -80,7 +80,16 @@ public class ClickScript : MonoBehaviour
             manager.currentState = States.Roam;
             clicks = 0;
             manager.nbGisement ++;
-            manager.points += 150;
+            if (manager.player.objInteractWith.GetComponent<Rock>().timeAdder)
+            {
+                manager.time += 10;
+            }
+            else
+            {
+                manager.points += 150;
+            }
+            Destroy(manager.player.objInteractWith);
+            manager.player.objInteractWith = null;
 
         } 
     }        

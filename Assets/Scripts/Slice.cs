@@ -92,8 +92,6 @@ public class Slice : MonoBehaviour
         //Si le slider est dans la bonne range
         if (mainSlider.value >= SliderBorneBas.value && mainSlider.value <= sliderBorneHaut.value && manager.currentState != States.Roam)
         {
-            Destroy(player.objInteractWith);
-            player.objInteractWith = null;
             //stopSlide = true;
             resulText.text = "Ok !";
             ROckTop.GetComponent<Rigidbody>().useGravity = true;
