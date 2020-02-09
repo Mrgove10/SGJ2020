@@ -73,6 +73,7 @@ public class Manager : MonoBehaviour
                 {
                     animation.SetInteger("Arm Open", 1);
                     musicManager.SonParleF();
+                    musicManager.SonDeplisBrasF();
                     _once1 = false;
                     _once3 = true;
                 }
@@ -102,6 +103,8 @@ public class Manager : MonoBehaviour
                     player.rockPrefab = Instantiate(player.BackupRockPrefab,player.breakPrefab.transform);
                     player.GetComponent<Break>().rock = player.rockPrefab; 
                     _onceinstanciate = false;
+                    musicManager.SonTranchePierreF();
+                    musicManager.SonReplisBrasF();
                 }
 
                 break;

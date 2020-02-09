@@ -21,6 +21,13 @@ public class MusicManager : MonoBehaviour
     public AudioSource sonParle7;
     public AudioSource sonParle8;
 
+    public AudioSource sonTranchePierre;
+
+    public AudioSource sonDeplisBras;
+    public AudioSource sonReplisBras;
+
+    public AudioSource sonCoupVent;
+
     private int rand;
     private int rand2;
     private int rand3;
@@ -55,6 +62,26 @@ public class MusicManager : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void SonTranchePierreF()
+    {
+        sonCoupVent.Play();
+    }
+
+    public void SonDeplisBrasF()
+    {
+        sonDeplisBras.Play();
+    }
+
+    public void SonReplisBrasF()
+    {
+        sonReplisBras.Play();
+    }
+
+    public void SonCoupVentF()
+    {
+        sonReplisBras.Play();
     }
 
     public void SonContentF()

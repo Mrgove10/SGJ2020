@@ -13,6 +13,7 @@ public class Slice : MonoBehaviour
     public TMP_Text resulText; //Text pour le test permetant de savoir si l'utilisateur se trompe ou non
     public float pas; //Le pas (la vitesse à laquelle le slider bouge)
     public AdaptiveMusicScript adaptiveMusic;
+    public MusicManager musicManager;
 
     [Required]
     public Manager manager;
@@ -115,6 +116,7 @@ public class Slice : MonoBehaviour
             }*/
             
             resulText.text = "Pas bon !";
+            musicManager.SonCoupVentF();
             //Inverse le sens du slider
             if (signePas)
             {
