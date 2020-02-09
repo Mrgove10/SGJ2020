@@ -7,7 +7,7 @@ public class Rock : MonoBehaviour
     public EColor color;
     public AudioSource rockMusic;
     public AdaptiveMusicScript musicSource;
-    public GameObject image;
+    //public GameObject image;
     public void Start()
     {
         switch (color)
@@ -33,7 +33,7 @@ public class Rock : MonoBehaviour
 
     private void Update()
     {
-        image.transform.rotation = Quaternion.LookRotation(-Camera.main.transform.forward);
+        //image.transform.rotation = Quaternion.LookRotation(-Camera.main.transform.forward);
     }
 }
 
