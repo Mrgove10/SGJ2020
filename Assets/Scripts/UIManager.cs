@@ -96,6 +96,8 @@ public class UIManager : MonoBehaviour
                 }
 
                 var txt = @"
+Votre score est de Z
+
 Vous avez réussi à analyser XX gisements métalliques.
 L'âge ainsi calculé est de Y Millions d'années 
 +/- X Ma
@@ -131,6 +133,7 @@ en datant encore plus de gisements !
                 Debug.Log(age);
                 txt = txt.Replace("Y", age.ToString());
                 txt = txt.Replace("X", pas.ToString());
+                txt = txt.Replace("Z", manager.points.ToString());
                 EndUI.GetComponentInChildren<TMP_Text>().text = txt;
                 break;
             default:
