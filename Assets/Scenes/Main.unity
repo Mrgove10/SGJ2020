@@ -1160,6 +1160,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23a0687195b742aa71cc8f2834073, type: 3}
+--- !u!82 &564238667 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7793914519447970995, guid: e16503133b494b44ba029d44f447a55e,
+    type: 3}
+  m_PrefabInstance: {fileID: 145549546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &630263212 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5691040253480219398, guid: 33ddc9b83382dd546b60674a8717dcdd,
@@ -1176,6 +1182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 680088488}
   - component: {fileID: 680088489}
+  - component: {fileID: 680088490}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -1215,6 +1222,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   manager: {fileID: 3727668209927079857}
+--- !u!114 &680088490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680088487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33db54ebf52d5d24895b0fb76fc720c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMouvement: {fileID: 564238667}
 --- !u!1 &809629236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2156752820099730631, guid: 33ddc9b83382dd546b60674a8717dcdd,
