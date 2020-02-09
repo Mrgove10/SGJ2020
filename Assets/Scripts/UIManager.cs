@@ -2,6 +2,8 @@ using System;
 using TMPro;
 using UnityEngine;
 using Random = System.Random;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -18,6 +20,12 @@ public class UIManager : MonoBehaviour
     public GameObject ClickUI;
     public GameObject EndUI;
 
+    public Button mainMenuButton;
+
+    private void Start()
+    {
+        mainMenuButton.onClick.AddListener(BackToMainMenu);
+    }
     private void Update()
     {
         timeText.text = manager.time.ToString();
@@ -84,21 +92,51 @@ public class UIManager : MonoBehaviour
 
                 var txt = @"Bravo!
 
-                    Vous avez réussi à analyser XX gisements métalliques.
-                L'âge ainsi calculé est de XXXX Millions d'années
-                    (cet âge correspond à la collision alpine).
+Vous avez réussi à analyser XX gisements métalliques.
+L'âge ainsi calculé est de XXXX Millions d'années 
++/- XXXXXX Ma
+(cet âge correspond à la collision alpine).
 
 
-                Rejouez pour améliorer la précision de votre âge
-                en datant encore plus de gisements !
-                    ";
+Rejouez pour améliorer la précision de votre âge
+en datant encore plus de gisements !
+                ";
 
-                txt.Replace("XX", nbgisement.ToString());
-                txt.Replace("XXXX", nbgisement.ToString());
+                txt = txt.Replace("XX", nbgisement.ToString());
+                int age;
+                int pas;
+                if (nbgisement <= 5)
+                {
+                    age = UnityEngine.Random.Range(20,51);
+                    pas = 15;
+                }
+                else if (nbgisement <= 10)
+                {
+                    age = UnityEngine.Random.Range(25,46);
+                    pas = 10;
+                }
+                else if (nbgisement <= 15)
+                {
+                    pas = 5;
+                    age = UnityEngine.Random.Range(30, 41);
+                }
+                else
+                {
+                    pas = 1;
+                    age = UnityEngine.Random.Range(34, 37);
+                }
+                txt = txt.Replace("XXXX", age.ToString());
+                txt = txt.Replace("XXXXXX", pas.ToString());
                 EndUI.GetComponentInChildren<TMP_Text>().text = txt;
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
         }
+    }
+
+    public void BackToMainMenu()
+    {
+        Debug.Log("tzsqt");
+        SceneManager.LoadSceneAsync("MainMenu");
     }
 }
