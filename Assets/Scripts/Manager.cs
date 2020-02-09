@@ -23,6 +23,9 @@ public class Manager : MonoBehaviour
     public GameObject planet;
     public GameObject rock;
 
+    public GameObject endGame;
+    public GameObject hud;
+
     private bool _once1;
     private bool _once2;
     private bool _once3;
@@ -43,6 +46,7 @@ public class Manager : MonoBehaviour
         switch (currentState)
         {
             case States.Roam:
+                ShowMainHUD();
                 mainCamera.transform.position = DefaultView.transform.position;
                 ShowElements();
                 _once1 = true;
@@ -58,6 +62,7 @@ public class Manager : MonoBehaviour
                 mainCamera.transform.position = FPSView.transform.position;
                 mainCamera.fieldOfView = 73;
                 ShowElements();
+                HideMainHUD();
                 if (_once1)
                 {
                     animation.SetInteger("Arm Open", 1);
@@ -81,6 +86,7 @@ public class Manager : MonoBehaviour
 
                 break;
             case States.Identify:
+                endGame.SetActive(true);
                 mainCamera.transform.position = FPSView.transform.position;
                 HideElements();
                 break;
@@ -117,5 +123,15 @@ public class Manager : MonoBehaviour
     {
         planet.SetActive(true);
         rock.SetActive(true);
+    }
+
+    private void HideMainHUD()
+    {
+        hud.SetActive(false);
+    }
+
+    private void ShowMainHUD()
+    {
+        hud.SetActive(true);
     }
 }
