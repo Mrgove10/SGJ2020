@@ -601,6 +601,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   manager: {fileID: 3727668209927079857}
+--- !u!1 &809629236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2156752820099730631, guid: 33ddc9b83382dd546b60674a8717dcdd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4428032210399567245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &819293113 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 819293113, guid: ebdf5e99b769cf247aac640b3d8e5737,
@@ -1205,6 +1211,11 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 4428032210399567246}
+    - target: {fileID: 4538547416896056567, guid: d8f8e6c44aaa62140bd88f1aaccfea9e,
+        type: 3}
+      propertyPath: sliceUI
+      value: 
+      objectReference: {fileID: 809629236}
     - target: {fileID: 5263653045503486558, guid: d8f8e6c44aaa62140bd88f1aaccfea9e,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -26,6 +26,8 @@ public class Manager : MonoBehaviour
     public GameObject endGame;
     public GameObject hud;
 
+    public GameObject sliceUI;
+
     private bool _once1;
     private bool _once2;
     private bool _once3;
@@ -53,6 +55,7 @@ public class Manager : MonoBehaviour
                 ShowElements();
                 _once1 = true;
                 _once2 = true;
+                _onceinstanciate = true;
                 if (_once3)
                 {
                     musicManager.SonContentF();
@@ -61,6 +64,7 @@ public class Manager : MonoBehaviour
 
                 break;
             case States.Break:
+
                 mainCamera.transform.position = FPSView.transform.position;
                 mainCamera.fieldOfView = 73;
                 ShowElements();
@@ -88,6 +92,7 @@ public class Manager : MonoBehaviour
 
                 break;
             case States.Identify:
+                _once2 = true;
                 endGame.SetActive(true);
                 mainCamera.transform.position = FPSView.transform.position;
                 HideElements();

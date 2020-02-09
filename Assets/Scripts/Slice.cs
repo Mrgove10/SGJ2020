@@ -17,7 +17,7 @@ public class Slice : MonoBehaviour
     [Required]
     public Manager manager;
     private bool signePas; //Le signe du pas (négatif ou positif)
-    private bool stopSlide; //Variable qui permet de stopper ou non le slider (true le stoppe)
+    public bool stopSlide; //Variable qui permet de stopper ou non le slider (true le stoppe)
 
     public GameObject ROckTop;
     public Player player;
@@ -84,10 +84,11 @@ public class Slice : MonoBehaviour
         {
             Destroy(player.objInteractWith);
             player.objInteractWith = null;
-            stopSlide = true;
+            //stopSlide = true;
             resulText.text = "Ok !";
             ROckTop.GetComponent<Rigidbody>().useGravity = true;
             manager.currentState = States.Identify;
+            resulText.text = "";
         }
         else
         {
