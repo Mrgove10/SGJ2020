@@ -66,7 +66,7 @@ public class MusicManager : MonoBehaviour
 
     public void SonTranchePierreF()
     {
-        sonCoupVent.Play();
+        sonTranchePierre.Play();
     }
 
     public void SonDeplisBrasF()
@@ -81,7 +81,7 @@ public class MusicManager : MonoBehaviour
 
     public void SonCoupVentF()
     {
-        sonReplisBras.Play();
+        sonCoupVent.Play();
     }
 
     public void SonContentF()
