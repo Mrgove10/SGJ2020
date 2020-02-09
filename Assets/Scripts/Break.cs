@@ -10,7 +10,6 @@ public class Break : MonoBehaviour
     public MusicManager musicManager;
 
     private Random r;
-    private bool _once = false;
 
     private void Start()
     {
@@ -43,10 +42,9 @@ public class Break : MonoBehaviour
         }
 
         // no mode pieces left
-        if (rock.transform.childCount <= 2 && _once == false)
+        if (rock.transform.childCount <= 2 && manager.currentState == States.Break)
         {
             manager.currentState = States.Slice;
-            _once = true;
         }
     }
 
