@@ -29,6 +29,7 @@ public class Manager : MonoBehaviour
     private bool _once1;
     private bool _once2;
     private bool _once3;
+    private bool _onceinstanciate;
     public Player player;
 
 
@@ -39,6 +40,7 @@ public class Manager : MonoBehaviour
         _once1 = true;
         _once2 = true;
         _once3 = true;
+        _onceinstanciate = true;
     }
 
     private void Update()
@@ -89,6 +91,12 @@ public class Manager : MonoBehaviour
                 endGame.SetActive(true);
                 mainCamera.transform.position = FPSView.transform.position;
                 HideElements();
+                if (_onceinstanciate)
+                {
+                    player.rockPrefab = Instantiate(player.BackupRockPrefab,player.breakPrefab.transform);
+                    _onceinstanciate = false;
+                }
+
                 break;
             default:
                 throw new ArgumentOutOfRangeException();

@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     public GameObject objInteractWith;
     public GameObject rockPrefab;
+    public GameObject BackupRockPrefab;
     public GameObject breakPrefab;
 
 
