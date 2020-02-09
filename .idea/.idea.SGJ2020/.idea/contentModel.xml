@@ -106,6 +106,7 @@
           <e p="AdaptiveMusicScript.cs" t="Include" />
           <e p="Break.cs" t="Include" />
           <e p="CheckGoodColor.cs" t="Include" />
+          <e p="ClickScript.cs" t="Include" />
           <e p="Examine.cs" t="Include" />
           <e p="MainMenuScript.cs" t="Include" />
           <e p="Manager.cs" t="Include" />
