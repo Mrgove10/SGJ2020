@@ -104,6 +104,16 @@ public class MusicManager : MonoBehaviour
         }
     }
 
+    public void SonContentDelay1F()
+    {
+        sonContent1.PlayDelayed(0.3f);
+    }
+
+    public void SonContentDelay2F()
+    {
+        sonContent2.PlayDelayed(0.3f);
+    }
+
     public void SonParleF()
     {
         rand2 = Random.Range(1, 9);
