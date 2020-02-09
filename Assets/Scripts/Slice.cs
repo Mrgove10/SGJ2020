@@ -28,10 +28,10 @@ public class Slice : MonoBehaviour
     {
         signePas = true;
         stopSlide = false;
-        pas = 1.6f;
+        pas = 2f;
 
         sliderBorneHaut.value = Random.Range(25, 80);
-        SliderBorneBas.value = sliderBorneHaut.value - Random.Range(10, 25);
+        SliderBorneBas.value = sliderBorneHaut.value - Random.Range(5, 10);
         resulText.text = "";
     }
 
@@ -39,10 +39,10 @@ public class Slice : MonoBehaviour
     {
         signePas = true;
         stopSlide = false;
-        pas = 1.6f;
+        pas = 2f;
 
         sliderBorneHaut.value = Random.Range(25, 80);
-        SliderBorneBas.value = sliderBorneHaut.value - Random.Range(10, 25);
+        SliderBorneBas.value = sliderBorneHaut.value - Random.Range(5, 10);
         resulText.text = "";
     }
 
@@ -101,6 +101,7 @@ public class Slice : MonoBehaviour
         }
         else
         {
+            manager.time -= 5;
             /*sliderBorneHaut.value = Random.Range(25, 80);
             SliderBorneBas.value = sliderBorneHaut.value - Random.Range(10, 25);
             if (pas <= 3.2f || pas >= -3.2f) //Augmente la vitesse jusqu'a un certain point

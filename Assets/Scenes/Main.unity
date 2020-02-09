@@ -6246,6 +6246,11 @@ PrefabInstance:
       propertyPath: sliceUI
       value: 
       objectReference: {fileID: 809629236}
+    - target: {fileID: 4538547416896056567, guid: d8f8e6c44aaa62140bd88f1aaccfea9e,
+        type: 3}
+      propertyPath: time
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 5263653045503486558, guid: d8f8e6c44aaa62140bd88f1aaccfea9e,
         type: 3}
       propertyPath: m_LocalPosition.x

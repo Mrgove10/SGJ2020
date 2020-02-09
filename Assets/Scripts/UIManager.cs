@@ -20,7 +20,12 @@ public class UIManager : MonoBehaviour
     public GameObject ClickUI;
     public GameObject EndUI;
 
+    private bool _once = false;
+    private int age;
+    private int pas;
+
     public Button mainMenuButton;
+    
 
     private void Start()
     {
@@ -92,7 +97,7 @@ public class UIManager : MonoBehaviour
 
                 var txt = @"
 Vous avez réussi à analyser XX gisements métalliques.
-L'âge ainsi calculé est de XXXX Millions d'années 
+L'âge ainsi calculé est de Y Millions d'années 
 +/- X Ma
 (cet âge correspond à la collision alpine).
 
@@ -102,29 +107,29 @@ en datant encore plus de gisements !
                 ";
 
                 txt = txt.Replace("XX", nbgisement.ToString());
-                int age;
-                int pas;
-                if (nbgisement <= 5)
+                if (nbgisement <= 5 && _once == false)
                 {
+                    _once = true;
                     age = UnityEngine.Random.Range(20,51);
                     pas = 15;
                 }
-                else if (nbgisement <= 10)
+                else if (nbgisement <= 10 && nbgisement > 5 && _once == false)
                 {
                     age = UnityEngine.Random.Range(25,46);
                     pas = 10;
                 }
-                else if (nbgisement <= 15)
+                else if (nbgisement <= 15 && nbgisement > 10 && _once == false)
                 {
                     pas = 5;
                     age = UnityEngine.Random.Range(30, 41);
                 }
-                else
+                else if (_once == false)
                 {
                     pas = 1;
                     age = UnityEngine.Random.Range(34, 37);
                 }
-                txt = txt.Replace("XXXX", age.ToString());
+                Debug.Log(age);
+                txt = txt.Replace("Y", age.ToString());
                 txt = txt.Replace("X", pas.ToString());
                 EndUI.GetComponentInChildren<TMP_Text>().text = txt;
                 break;
