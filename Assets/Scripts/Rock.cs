@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Rock : MonoBehaviour
 {
@@ -9,7 +11,7 @@ public class Rock : MonoBehaviour
     public EColor color;
     public AudioSource rockMusic;
     public AdaptiveMusicScript musicSource;
-
+    public GameObject image;
     public void Start()
     {
         switch (color)
@@ -32,7 +34,13 @@ public class Rock : MonoBehaviour
 
         rockMusic.Play();
     }
+
+    private void Update()
+    {
+        image.transform.rotation = Quaternion.LookRotation(-Camera.main.transform.forward);
+    }
 }
+
 public enum EColor
 {
     rouge,

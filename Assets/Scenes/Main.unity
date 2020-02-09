@@ -332,6 +332,7 @@ MonoBehaviour:
   color: 1
   rockMusic: {fileID: 174610142}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!82 &174610142
 AudioSource:
   m_ObjectHideFlags: 0
@@ -592,6 +593,7 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 204310142}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &204310145
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -817,6 +819,7 @@ MonoBehaviour:
   color: 3
   rockMusic: {fileID: 237230665}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &237230668
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1042,6 +1045,7 @@ MonoBehaviour:
   color: 1
   rockMusic: {fileID: 260814921}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &260814924
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1491,6 +1495,7 @@ MonoBehaviour:
   color: 3
   rockMusic: {fileID: 498643020}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!82 &498643020
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1752,6 +1757,7 @@ MonoBehaviour:
   color: 2
   rockMusic: {fileID: 499302231}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &499302234
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2086,6 +2092,7 @@ MonoBehaviour:
   color: 1
   rockMusic: {fileID: 559277380}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &559277383
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2323,6 +2330,7 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 678476105}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &678476108
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2630,6 +2638,7 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 721709557}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &721709560
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2880,6 +2889,7 @@ MonoBehaviour:
   color: 2
   rockMusic: {fileID: 869350187}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &869350190
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3303,6 +3313,7 @@ MonoBehaviour:
   color: 3
   rockMusic: {fileID: 1099614763}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &1099614766
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3364,6 +3375,76 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099614761}
   m_Mesh: {fileID: 6329158148709259305, guid: 085148335b1274e4eaa054f830a815ed, type: 3}
+--- !u!1 &1155065370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155065371}
+  - component: {fileID: 1155065373}
+  - component: {fileID: 1155065372}
+  m_Layer: 0
+  m_Name: Top
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1155065371
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155065370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1364099076}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0, y: 0.03419}
+  m_SizeDelta: {x: 0.202, y: 0.14688}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1155065372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155065370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: ed94ae7334065fc43a2da5193b45cbad, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1155065373
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155065370}
+  m_CullTransparentMesh: 0
 --- !u!1 &1300505683
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,6 +3610,7 @@ MonoBehaviour:
   color: 1
   rockMusic: {fileID: 1300505685}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &1300505688
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3663,7 +3745,8 @@ Transform:
   m_LocalRotation: {x: 0.4870939, y: 0.34777403, z: 0.21213633, w: 0.7725225}
   m_LocalPosition: {x: -2.8006396, y: 23.330153, z: 44.57}
   m_LocalScale: {x: 10, y: 10, z: 10}
-  m_Children: []
+  m_Children:
+  - {fileID: 1155065371}
   m_Father: {fileID: 680088488}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 37.231003, y: 69.135, z: 56.843002}
@@ -3795,6 +3878,7 @@ MonoBehaviour:
   color: 3
   rockMusic: {fileID: 1364099077}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 1155065370}
 --- !u!136 &1364099080
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4108,6 +4192,7 @@ MonoBehaviour:
   color: 2
   rockMusic: {fileID: 1434951447}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &1434951450
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4333,6 +4418,7 @@ MonoBehaviour:
   color: 1
   rockMusic: {fileID: 1484473572}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &1484473575
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4558,6 +4644,7 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 1498261797}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &1498261800
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4880,6 +4967,7 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 1686487007}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &1686487010
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5105,6 +5193,7 @@ MonoBehaviour:
   color: 2
   rockMusic: {fileID: 1752756249}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &1752756252
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5330,6 +5419,7 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 1903398139}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &1903398142
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5651,6 +5741,7 @@ MonoBehaviour:
   color: 3
   rockMusic: {fileID: 1945164544}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &1945164547
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5897,6 +5988,7 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 2101876573}
   musicSource: {fileID: 1647791235}
+  image: {fileID: 0}
 --- !u!136 &2101876576
 CapsuleCollider:
   m_ObjectHideFlags: 0
