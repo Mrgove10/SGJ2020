@@ -4,16 +4,19 @@ using UnityEngine;
 public class Manager : MonoBehaviour
 {
     public int points;
-
+    public int nbGisement;
     public int time = 250;
 
     public States currentState = States.Roam;
 
     [Header("GameObjects")]
     public GameObject DefaultView;
+
     public MusicManager musicManager;
     public Animator animation;
-    
+    public UIManager uiManager;
+
+
     public GameObject FPSView;
     private Camera mainCamera;
 
@@ -49,6 +52,7 @@ public class Manager : MonoBehaviour
                     musicManager.SonContentF();
                     _once3 = false;
                 }
+
                 break;
             case States.Break:
                 mainCamera.transform.position = FPSView.transform.position;
@@ -56,11 +60,12 @@ public class Manager : MonoBehaviour
                 ShowElements();
                 if (_once1)
                 {
-                    animation.SetInteger("Arm Open",1);
+                    animation.SetInteger("Arm Open", 1);
                     musicManager.SonParleF();
                     _once1 = false;
                     _once3 = true;
                 }
+
                 break;
             case States.Slice:
                 mainCamera.transform.position = FPSView.transform.position;
@@ -68,11 +73,12 @@ public class Manager : MonoBehaviour
                 ShowElements();
                 if (_once2)
                 {
-                    animation.SetInteger("Arm Open",0);
-                    animation.SetInteger("Arm Close",1);
+                    animation.SetInteger("Arm Open", 0);
+                    animation.SetInteger("Arm Close", 1);
                     musicManager.SonParleF();
                     _once2 = false;
                 }
+
                 break;
             case States.Identify:
                 mainCamera.transform.position = FPSView.transform.position;
@@ -97,7 +103,8 @@ public class Manager : MonoBehaviour
 
     private void GameOver()
     {
-        Debug.Log("GAMEOVER");
+        Debug.Log("Game over");
+        currentState = States.End;
     }
 
     private void HideElements()
