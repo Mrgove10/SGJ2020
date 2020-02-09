@@ -34,6 +34,16 @@ public class Slice : MonoBehaviour
         resulText.text = "";
     }
 
+    public void randomizer()
+    {
+        signePas = true;
+        stopSlide = false;
+        pas = 1.6f;
+
+        sliderBorneHaut.value = Random.Range(25, 80);
+        SliderBorneBas.value = sliderBorneHaut.value - Random.Range(10, 25);
+        resulText.text = "";
+    }
 
     // Update is called once per frame
     void Update()

@@ -84,6 +84,7 @@ public class Manager : MonoBehaviour
                 ShowElements();
                 if (_once2)
                 {
+                    sliceUI.GetComponentInChildren<Slice>().randomizer();
                     animation.SetInteger("Arm Open", 0);
                     animation.SetInteger("Arm Close", 1);
                     musicManager.SonParleF();
