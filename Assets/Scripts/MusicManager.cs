@@ -5,7 +5,9 @@ using UnityEngine;
 public class MusicManager : MonoBehaviour
 {
 
-    public AudioSource sonPioche;
+    public AudioSource sonPioche1;
+    public AudioSource sonPioche2;
+    public AudioSource sonPioche3;
 
     public AudioSource sonContent1;
     public AudioSource sonContent2;
@@ -21,6 +23,7 @@ public class MusicManager : MonoBehaviour
 
     private int rand;
     private int rand2;
+    private int rand3;
 
     // Start is called before the first frame update
     void Start()
@@ -36,12 +39,27 @@ public class MusicManager : MonoBehaviour
 
     public void SonPiocheF()
     {
-        sonPioche.Play();
+        rand3 = Random.Range(1, 4);
+    
+        switch (rand3)
+        {
+            case 1:
+                sonPioche1.Play();
+                break;
+            case 2:
+                sonPioche2.Play();
+                break;
+            case 3:
+                sonPioche3.Play();
+                break;
+            default:
+                break;
+        }
     }
 
     public void SonContentF()
     {
-        rand = Random.Range(0, 1);
+        rand = Random.Range(0, 2);
         if(rand == 1)
         {
             sonContent1.Play();
@@ -54,7 +72,7 @@ public class MusicManager : MonoBehaviour
 
     public void SonParleF()
     {
-        rand2 = Random.Range(0, 8);
+        rand2 = Random.Range(1, 9);
 
         switch (rand2)
         {
