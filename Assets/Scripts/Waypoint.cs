@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,4 +32,4 @@ public class Waypoint : MonoBehaviour
         waypoint.position = screenPos;
         distanceText.text = (int) Vector3.Distance(player.position, position) + " m";
     }
-}
+}*/

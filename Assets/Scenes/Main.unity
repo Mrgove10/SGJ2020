@@ -332,7 +332,6 @@ MonoBehaviour:
   color: 1
   rockMusic: {fileID: 174610142}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!82 &174610142
 AudioSource:
   m_ObjectHideFlags: 0
@@ -593,7 +592,6 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 204310142}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &204310145
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -819,7 +817,6 @@ MonoBehaviour:
   color: 3
   rockMusic: {fileID: 237230665}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &237230668
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1045,7 +1042,6 @@ MonoBehaviour:
   color: 1
   rockMusic: {fileID: 260814921}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &260814924
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1495,7 +1491,6 @@ MonoBehaviour:
   color: 3
   rockMusic: {fileID: 498643020}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!82 &498643020
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1757,7 +1752,6 @@ MonoBehaviour:
   color: 2
   rockMusic: {fileID: 499302231}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &499302234
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2092,7 +2086,6 @@ MonoBehaviour:
   color: 1
   rockMusic: {fileID: 559277380}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &559277383
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2330,7 +2323,6 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 678476105}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &678476108
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2638,7 +2630,6 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 721709557}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &721709560
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2889,7 +2880,6 @@ MonoBehaviour:
   color: 2
   rockMusic: {fileID: 869350187}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &869350190
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3019,6 +3009,10 @@ PrefabInstance:
     - target: {fileID: 177638, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_Name
       value: '[Graphy]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 177638, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11496292, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_advancedModuleState
@@ -3313,7 +3307,6 @@ MonoBehaviour:
   color: 3
   rockMusic: {fileID: 1099614763}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &1099614766
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3540,7 +3533,6 @@ MonoBehaviour:
   color: 1
   rockMusic: {fileID: 1300505685}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &1300505688
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3806,7 +3798,6 @@ MonoBehaviour:
   color: 3
   rockMusic: {fileID: 1364099077}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &1364099080
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4080,7 +4071,6 @@ MonoBehaviour:
   color: 2
   rockMusic: {fileID: 1434951447}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &1434951450
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4306,7 +4296,6 @@ MonoBehaviour:
   color: 1
   rockMusic: {fileID: 1484473572}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &1484473575
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4532,7 +4521,6 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 1498261797}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &1498261800
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4855,7 +4843,6 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 1686487007}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &1686487010
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5081,7 +5068,6 @@ MonoBehaviour:
   color: 2
   rockMusic: {fileID: 1752756249}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &1752756252
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5307,7 +5293,6 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 1903398139}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &1903398142
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5629,7 +5614,6 @@ MonoBehaviour:
   color: 3
   rockMusic: {fileID: 1945164544}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &1945164547
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5876,7 +5860,6 @@ MonoBehaviour:
   color: 0
   rockMusic: {fileID: 2101876573}
   musicSource: {fileID: 1647791235}
-  image: {fileID: 0}
 --- !u!136 &2101876576
 CapsuleCollider:
   m_ObjectHideFlags: 0
