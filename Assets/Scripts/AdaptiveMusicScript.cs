@@ -15,6 +15,11 @@ public class AdaptiveMusicScript : MonoBehaviour
     public bool melodiaPlayV3;
     public bool melodiaPlayV4;
 
+    public AudioClip melodiaMusicV1;
+    public AudioClip melodiaMusicV2;
+    public AudioClip melodiaMusicV3;
+    public AudioClip melodiaMusicV4;
+
     // Start is called before the first frame update
     void Start()
     {

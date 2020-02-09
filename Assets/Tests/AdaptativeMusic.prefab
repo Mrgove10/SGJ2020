@@ -537,3 +537,7 @@ MonoBehaviour:
   melodiaPlayV2: 0
   melodiaPlayV3: 0
   melodiaPlayV4: 0
+  melodiaMusicV1: {fileID: 8300000, guid: 99a4b866c7999264a97bb1b42175c5f3, type: 3}
+  melodiaMusicV2: {fileID: 8300000, guid: 8cb49a458dbe46a47919e7d46c02fe07, type: 3}
+  melodiaMusicV3: {fileID: 8300000, guid: 4ed239fe8f8efc04fb3c6b32a2de7554, type: 3}
+  melodiaMusicV4: {fileID: 8300000, guid: 7df99721332382b4da8dec18331293ec, type: 3}
