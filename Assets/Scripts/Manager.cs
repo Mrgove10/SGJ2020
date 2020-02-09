@@ -98,6 +98,9 @@ public class Manager : MonoBehaviour
                 }
 
                 break;
+            case States.End:
+                Debug.Log("end game (back to main menue button to add)");
+                break;
             default:
                 throw new ArgumentOutOfRangeException();
         }
