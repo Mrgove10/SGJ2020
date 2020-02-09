@@ -68,7 +68,6 @@ public class Manager : MonoBehaviour
                 ShowElements();
                 if (_once2)
                 {
-                    
                     animation.SetInteger("Arm Open",0);
                     animation.SetInteger("Arm Close",1);
                     musicManager.SonParleF();
