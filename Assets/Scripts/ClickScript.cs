@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ClickScript : MonoBehaviour
 {
     public List<Button> buttons;
+    public Manager manager;
 
     public int clicks;
     // Start is called before the first frame update
@@ -74,6 +75,10 @@ public class ClickScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(clicks);
+        if (clicks >=2)
+        {
+            manager.currentState = States.Roam;
+            clicks = 0;
+        } 
     }        
 }
