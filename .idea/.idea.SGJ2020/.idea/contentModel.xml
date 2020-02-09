@@ -123,6 +123,7 @@
           <e p="MusicManager.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="RandomizeImage.cs" t="Include" />
+          <e p="Rock.cs" t="Include" />
           <e p="Slice.cs" t="Include" />
           <e p="States.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
