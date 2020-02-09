@@ -6545,6 +6545,11 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 3727668209927079857}
+    - target: {fileID: 5701171405714515036, guid: 33ddc9b83382dd546b60674a8717dcdd,
+        type: 3}
+      propertyPath: musicManager
+      value: 
+      objectReference: {fileID: 90889346}
     - target: {fileID: 8298733747315533907, guid: 33ddc9b83382dd546b60674a8717dcdd,
         type: 3}
       propertyPath: m_fontStyle

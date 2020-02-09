@@ -28,9 +28,16 @@ public class MusicManager : MonoBehaviour
 
     public AudioSource sonCoupVent;
 
+    public AudioSource sonBon1;
+    public AudioSource sonBon2;
+
+    public AudioSource sonErreur1;
+    public AudioSource sonErreur2;
+
     private int rand;
     private int rand2;
     private int rand3;
+    private int rand4;
 
     // Start is called before the first frame update
     void Start()
@@ -129,6 +136,29 @@ public class MusicManager : MonoBehaviour
                 break;
             default:
                 break;
+        }
+    }
+
+    public void SonBon1F()
+    {
+        sonBon1.Play();
+    }
+
+    public void SonBon2F()
+    {
+        sonBon2.Play();
+    }
+
+    public void SonErreurF()
+    {
+        rand4 = Random.Range(0, 2);
+        if(rand4 == 0)
+        {
+            sonErreur1.Play();
+        }
+        else
+        {
+            sonErreur2.Play();
         }
     }
 }
