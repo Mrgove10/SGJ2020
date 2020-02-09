@@ -79,6 +79,9 @@ public class ClickScript : MonoBehaviour
         {
             manager.currentState = States.Roam;
             clicks = 0;
+            manager.nbGisement ++;
+            manager.points += 150;
+
         } 
     }        
 }
