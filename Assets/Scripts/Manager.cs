@@ -94,6 +94,7 @@ public class Manager : MonoBehaviour
                 if (_onceinstanciate)
                 {
                     player.rockPrefab = Instantiate(player.BackupRockPrefab,player.breakPrefab.transform);
+                    player.GetComponent<Break>().rock = player.rockPrefab; 
                     _onceinstanciate = false;
                 }
 
