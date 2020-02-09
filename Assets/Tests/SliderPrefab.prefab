@@ -1137,7 +1137,7 @@ GameObject:
   - component: {fileID: 793897152169687920}
   - component: {fileID: 793897152169687921}
   m_Layer: 0
-  m_Name: Slider
+  m_Name: SliderPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1175,6 +1175,11 @@ MonoBehaviour:
   SliderBorneBas: {fileID: 793897152266885914}
   resulText: {fileID: 793897152024960348}
   pas: 0
+  adaptiveMusic: {fileID: 0}
+  manager: {fileID: 0}
+  stopSlide: 0
+  ROckTop: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &793897152253979782
 GameObject:
   m_ObjectHideFlags: 0

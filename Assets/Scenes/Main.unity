@@ -328,6 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeAdder: 0
+  color: 0
 --- !u!1 &337021634
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeAdder: 1
+  color: 0
 --- !u!1001 &511708455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1177,6 +1179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeAdder: 0
+  color: 0
 --- !u!1 &2009634279 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2560538380657328736, guid: c4ccca28cb84c6d41a3c1954f786e2b3,
@@ -1461,7 +1464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 505642968, guid: 33ddc9b83382dd546b60674a8717dcdd, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1196159923, guid: 33ddc9b83382dd546b60674a8717dcdd, type: 3}
       propertyPath: m_Enabled
@@ -1611,6 +1614,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428032211607635060, guid: 33ddc9b83382dd546b60674a8717dcdd,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428032211607635061, guid: 33ddc9b83382dd546b60674a8717dcdd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4428032211607635066, guid: 33ddc9b83382dd546b60674a8717dcdd,
         type: 3}

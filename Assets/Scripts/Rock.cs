@@ -6,15 +6,12 @@ public class Rock : MonoBehaviour
 {
 
     public bool timeAdder = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public EColor color;
+}
+public enum EColor
+{
+    rouge,
+    bleu,
+    vert,
+    orange
 }
