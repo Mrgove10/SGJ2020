@@ -117,16 +117,19 @@ en datant encore plus de gisements !
                 }
                 else if (nbgisement <= 10 && nbgisement > 5 && _once == false)
                 {
+                    _once = true;
                     age = UnityEngine.Random.Range(25,46);
                     pas = 10;
                 }
                 else if (nbgisement <= 15 && nbgisement > 10 && _once == false)
                 {
+                    _once = true;
                     pas = 5;
                     age = UnityEngine.Random.Range(30, 41);
                 }
                 else if (_once == false)
                 {
+                    _once = true;
                     pas = 1;
                     age = UnityEngine.Random.Range(34, 37);
                 }
