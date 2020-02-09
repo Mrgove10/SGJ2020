@@ -90,11 +90,10 @@ public class UIManager : MonoBehaviour
                     années = r.Next(34, 36);
                 }
 
-                var txt = @"Bravo!
-
+                var txt = @"
 Vous avez réussi à analyser XX gisements métalliques.
 L'âge ainsi calculé est de XXXX Millions d'années 
-+/- XXXXXX Ma
++/- X Ma
 (cet âge correspond à la collision alpine).
 
 
@@ -126,7 +125,7 @@ en datant encore plus de gisements !
                     age = UnityEngine.Random.Range(34, 37);
                 }
                 txt = txt.Replace("XXXX", age.ToString());
-                txt = txt.Replace("XXXXXX", pas.ToString());
+                txt = txt.Replace("X", pas.ToString());
                 EndUI.GetComponentInChildren<TMP_Text>().text = txt;
                 break;
             default:
